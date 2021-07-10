@@ -1,0 +1,87 @@
+\hypertarget{classgl_1_1_c_font}{}\doxysection{gl\+::CFont Class Reference}
+\label{classgl_1_1_c_font}\index{gl::CFont@{gl::CFont}}
+
+
+Loads and store the fonts for later use in any part of the document.  
+
+
+
+
+{\ttfamily \#include $<$CFont.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classgl_1_1_c_font_a1e21450a0a97d4f247d7ea08cd6a0d9e}{Add\+Font}} (string name, string font\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a font to the list. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_c_font_a9d48c973708214d312128c864aeb3b43}{Add\+Font}} (string name, sf\+::\+Font font)
+\begin{DoxyCompactList}\small\item\em Adds a font to the list. \end{DoxyCompactList}\item 
+static sf\+::\+Font $\ast$ \mbox{\hyperlink{classgl_1_1_c_font_a4730b78f9b868f643a9f032159b70644}{Get\+Font}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the font with that name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Loads and store the fonts for later use in any part of the document. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgl_1_1_c_font_a9d48c973708214d312128c864aeb3b43}\label{classgl_1_1_c_font_a9d48c973708214d312128c864aeb3b43}} 
+\index{gl::CFont@{gl::CFont}!AddFont@{AddFont}}
+\index{AddFont@{AddFont}!gl::CFont@{gl::CFont}}
+\doxysubsubsection{\texorpdfstring{AddFont()}{AddFont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void gl\+::\+CFont\+::\+Add\+Font (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{sf\+::\+Font}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a font to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the font that will be stored as \\
+\hline
+{\em font} & the font to replicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000127}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_font_a1e21450a0a97d4f247d7ea08cd6a0d9e}\label{classgl_1_1_c_font_a1e21450a0a97d4f247d7ea08cd6a0d9e}} 
+\index{gl::CFont@{gl::CFont}!AddFont@{AddFont}}
+\index{AddFont@{AddFont}!gl::CFont@{gl::CFont}}
+\doxysubsubsection{\texorpdfstring{AddFont()}{AddFont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void gl\+::\+CFont\+::\+Add\+Font (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{font\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a font to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the font that will be stored as \\
+\hline
+{\em font\+Name} & the file where the font is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000126}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_font_a4730b78f9b868f643a9f032159b70644}\label{classgl_1_1_c_font_a4730b78f9b868f643a9f032159b70644}} 
+\index{gl::CFont@{gl::CFont}!GetFont@{GetFont}}
+\index{GetFont@{GetFont}!gl::CFont@{gl::CFont}}
+\doxysubsubsection{\texorpdfstring{GetFont()}{GetFont()}}
+{\footnotesize\ttfamily sf\+::\+Font $\ast$ gl\+::\+CFont\+::\+Get\+Font (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a pointer to the font with that name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000128}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/CFont.\+h\item 
+src/CFont.\+cpp\end{DoxyCompactItemize}

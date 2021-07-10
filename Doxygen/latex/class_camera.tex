@@ -1,0 +1,104 @@
+\hypertarget{class_camera}{}\doxysection{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+Its in charge of modifying the view of a window.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_a036c42a13edec59cfc7fb1e6f9f5ed04}{Camera}} (sf\+::\+Float\+Rect init\+View, float sensibility)
+\begin{DoxyCompactList}\small\item\em Construct the camera. Calls the Init function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_aac5b324dc67a27d022a46a8b4e0681f1}{Init}} (sf\+::\+Float\+Rect init\+View, float sensibility)
+\begin{DoxyCompactList}\small\item\em Initialize the values of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a9645d33401b377d0cd32c07242ad1463}{Update}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Updates the size and center of the camera and sets it to the window. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_camera_a49bd158227816fe0d0684374730f40cb}{Get\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Returns the center of the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Its in charge of modifying the view of a window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_a036c42a13edec59cfc7fb1e6f9f5ed04}\label{class_camera_a036c42a13edec59cfc7fb1e6f9f5ed04}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{init\+View,  }\item[{float}]{sensibility }\end{DoxyParamCaption})}
+
+
+
+Construct the camera. Calls the Init function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+View} & the initial view zone \\
+\hline
+{\em sensibility} & the sensibility of the movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000122}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_a49bd158227816fe0d0684374730f40cb}\label{class_camera_a49bd158227816fe0d0684374730f40cb}} 
+\index{Camera@{Camera}!GetCenter@{GetCenter}}
+\index{GetCenter@{GetCenter}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{GetCenter()}{GetCenter()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Camera\+::\+Get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the center of the camera. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000125}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_camera_aac5b324dc67a27d022a46a8b4e0681f1}\label{class_camera_aac5b324dc67a27d022a46a8b4e0681f1}} 
+\index{Camera@{Camera}!Init@{Init}}
+\index{Init@{Init}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Camera\+::\+Init (\begin{DoxyParamCaption}\item[{sf\+::\+Float\+Rect}]{init\+View,  }\item[{float}]{sensibility }\end{DoxyParamCaption})}
+
+
+
+Initialize the values of the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+View} & the initial view zone \\
+\hline
+{\em sensibility} & the sensibility of the movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000123}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_camera_a9645d33401b377d0cd32c07242ad1463}\label{class_camera_a9645d33401b377d0cd32c07242ad1463}} 
+\index{Camera@{Camera}!Update@{Update}}
+\index{Update@{Update}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Camera\+::\+Update (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Updates the size and center of the camera and sets it to the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window that will be changing its view \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000124}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Camera.\+h\item 
+src/Camera.\+cpp\end{DoxyCompactItemize}

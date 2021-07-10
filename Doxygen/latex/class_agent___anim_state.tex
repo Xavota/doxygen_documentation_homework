@@ -1,0 +1,116 @@
+\hypertarget{class_agent___anim_state}{}\doxysection{Agent\+\_\+\+Anim\+State Class Reference}
+\label{class_agent___anim_state}\index{Agent\_AnimState@{Agent\_AnimState}}
+
+
+The father of all the animation states.  
+
+
+
+
+{\ttfamily \#include $<$Agent\+\_\+\+Anim\+State.\+h$>$}
+
+Inheritance diagram for Agent\+\_\+\+Anim\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.717791cm]{class_agent___anim_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_agent___anim_state_a66a23a28469ca7563a32449cc5620538}{Enter}} (\mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The start of the state. \end{DoxyCompactList}\item 
+virtual e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent___anim_state_a8f747df9287cb71a2ee753be8be54809}{Update}} (\mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The update of the state. Returns the new state to the machine. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_agent___anim_state_ade0f3e7203af9fd30a3fac149a19b1e4}{Exit}} (\mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The end of the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent___anim_state_a5bc9e927768085f4d1fee79dc6f44ffe}\label{class_agent___anim_state_a5bc9e927768085f4d1fee79dc6f44ffe}} 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ {\bfseries m\+\_\+sequence\+Rects}
+\item 
+\mbox{\Hypertarget{class_agent___anim_state_ae235cbbc4518a23f740a1fa50a4418af}\label{class_agent___anim_state_ae235cbbc4518a23f740a1fa50a4418af}} 
+sf\+::\+Texture $\ast$ {\bfseries m\+\_\+atlas\+Map} = nullptr
+\item 
+\mbox{\Hypertarget{class_agent___anim_state_a5e572f91737e8811fef0680d54f826b4}\label{class_agent___anim_state_a5e572f91737e8811fef0680d54f826b4}} 
+float {\bfseries m\+\_\+fps} = 0
+\item 
+\mbox{\Hypertarget{class_agent___anim_state_ae1b11392f8bc5d330a842a22f8adae0d}\label{class_agent___anim_state_ae1b11392f8bc5d330a842a22f8adae0d}} 
+bool {\bfseries m\+\_\+repeat} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The father of all the animation states. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent___anim_state_a66a23a28469ca7563a32449cc5620538}\label{class_agent___anim_state_a66a23a28469ca7563a32449cc5620538}} 
+\index{Agent\_AnimState@{Agent\_AnimState}!Enter@{Enter}}
+\index{Enter@{Enter}!Agent\_AnimState@{Agent\_AnimState}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+State\+::\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The start of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000072}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented in \mbox{\hyperlink{class_agent___anim_win_state_a1d8a4ba009afe6d6774a8f2f68afc9da}{Agent\+\_\+\+Anim\+Win\+State}}, \mbox{\hyperlink{class_agent___anim_running_state_a8fd294b91f06a791f9588c6c2a6e75b2}{Agent\+\_\+\+Anim\+Running\+State}}, \mbox{\hyperlink{class_agent___anim_lose_state_a2fd0b7bfebbcee2dba45129a0befb002}{Agent\+\_\+\+Anim\+Lose\+State}}, and \mbox{\hyperlink{class_agent___anim_has_flag_state_a8a688df98c4f453fd74d651d63174a1b}{Agent\+\_\+\+Anim\+Has\+Flag\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_state_ade0f3e7203af9fd30a3fac149a19b1e4}\label{class_agent___anim_state_ade0f3e7203af9fd30a3fac149a19b1e4}} 
+\index{Agent\_AnimState@{Agent\_AnimState}!Exit@{Exit}}
+\index{Exit@{Exit}!Agent\_AnimState@{Agent\_AnimState}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+State\+::\+Exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The end of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000074}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented in \mbox{\hyperlink{class_agent___anim_win_state_ade32cf5552b1bf585a0a84b4ec3737ac}{Agent\+\_\+\+Anim\+Win\+State}}, \mbox{\hyperlink{class_agent___anim_running_state_a2a897efff53e95fcb2407264496fab40}{Agent\+\_\+\+Anim\+Running\+State}}, \mbox{\hyperlink{class_agent___anim_lose_state_a28bde63e8ae80865549fe6308b996570}{Agent\+\_\+\+Anim\+Lose\+State}}, and \mbox{\hyperlink{class_agent___anim_has_flag_state_acf94aa2dce14bc686a545193e7690ed2}{Agent\+\_\+\+Anim\+Has\+Flag\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_state_a8f747df9287cb71a2ee753be8be54809}\label{class_agent___anim_state_a8f747df9287cb71a2ee753be8be54809}} 
+\index{Agent\_AnimState@{Agent\_AnimState}!Update@{Update}}
+\index{Update@{Update}!Agent\_AnimState@{Agent\_AnimState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE Agent\+\_\+\+Anim\+State\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The update of the state. Returns the new state to the machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000073}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented in \mbox{\hyperlink{class_agent___anim_win_state_a1db49ba106de6d3203e3d4c69d2fd031}{Agent\+\_\+\+Anim\+Win\+State}}, \mbox{\hyperlink{class_agent___anim_running_state_aef17007feab868e3227bc23049185007}{Agent\+\_\+\+Anim\+Running\+State}}, \mbox{\hyperlink{class_agent___anim_lose_state_a8b0df5646e394ea2cb2c4c9a472126e6}{Agent\+\_\+\+Anim\+Lose\+State}}, and \mbox{\hyperlink{class_agent___anim_has_flag_state_a5c5d7020b38050145c6fd9890e8d9699}{Agent\+\_\+\+Anim\+Has\+Flag\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent\+\_\+\+Anim\+State.\+h\item 
+src/Agent\+\_\+\+Anim\+State.\+cpp\end{DoxyCompactItemize}

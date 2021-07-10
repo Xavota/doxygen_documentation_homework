@@ -1,0 +1,436 @@
+\hypertarget{class_agent_manager}{}\doxysection{Agent\+Manager Class Reference}
+\label{class_agent_manager}\index{AgentManager@{AgentManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_agent_manager_ab20ad14dd39f29c1849eaecc4ca7978f}{Init}} (\mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$st\+Machine, \mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$anim\+Machine)
+\begin{DoxyCompactList}\small\item\em Initialice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a764633f55bf8f87f7cd471cdc9ab8c3b}{Restart}} ()
+\begin{DoxyCompactList}\small\item\em Replace all the agents and return them to FOLLOW\+\_\+\+FLAG state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_afe848b8429d2f325d96bf728520f447d}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates all the agents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_aa06d3ec3f1c3768b68d89b5448e351cc}{Render}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Renders all the agents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_aca9e4564b339ef11945ca2edd510b40f}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Initialice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_ae6584248d9e9de45f4f1710f2842923a}{Add\+Agents}} (unsigned int agents, sf\+::\+Int\+Rect aperance\+Range, sf\+::\+Color color, std\+::string team\+Name, sf\+::\+Vector2f base\+Pos)
+\begin{DoxyCompactList}\small\item\em Adds a number of agents of a certain team. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a5ab4514bb822f7776cbdb0f6e20b9d48}{Remove\+Agents}} (unsigned int agents, std\+::string team\+Name)
+\begin{DoxyCompactList}\small\item\em Delete some agents of a team. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a190584b2ff52917cdcc97e79c4115206}{Remove\+Agent}} (unsigned int agent\+Index)
+\begin{DoxyCompactList}\small\item\em Delete an agent of a certein index. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ \mbox{\hyperlink{class_agent_manager_af9b94fa339fc27d6d6999c67ea6df932}{Get\+Agents}} (std\+::string team\+Name=\char`\"{}All\char`\"{})
+\begin{DoxyCompactList}\small\item\em Returns a list of agents of a certain team or all the agents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_aeee914eff3f34f841d7b6ca83d7675bd}{Update\+Team\+Aperiance\+Range}} (std\+::string team\+Name, sf\+::\+Int\+Rect range)
+\begin{DoxyCompactList}\small\item\em Updates the range apperance of the team. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a8e958ef586e6c51b270d17902f4d9de9}{Update\+Team\+Base\+Pos}} (std\+::string team\+Name, sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Updates the base position of the team. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a468b2e476d0e26575aab22da77d727b4}{Update\+Team\+Color}} (std\+::string team\+Name, sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Updates the color of the team. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a2564052ab8079a6401ca4df162a765e7}{Add\+Seek\+Target}} (sf\+::\+Vector2f target, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds a seek target to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_ac78e5a03ffb3130c57b049d0f9b07901}{Add\+Flee\+Target}} (sf\+::\+Vector2f target, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds a flee target to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_aaba763f2a823bdde76a866a38a49360f}{Add\+Wander\+Behaviour}} (std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds the wander behaviour to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a030927ec3f90d988772eaeb227291a30}{Add\+Pursuit\+Target}} (sf\+::\+Vector2f target, sf\+::\+Vector2f velocity, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds a pursuit target to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a225d6958462607cf67a509140c86c0e2}{Add\+Evade\+Target}} (sf\+::\+Vector2f target, sf\+::\+Vector2f velocity, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds a evade target to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_ae49b03401a10505de243e52092e4a15f}{Add\+Obstacle\+To\+Avoid}} (sf\+::\+Vector2f obstacle, float radious, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds an obstacle to avoid to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a4d682a249cab815cf33f4e5b163d3b8d}{Add\+Follow\+Path\+Point}} (sf\+::\+Vector2f point, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds a point to the path to follow to the agents given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a165ad538d88dffdabd6757024108b6bf}{Set\+Follow\+Path\+Mode}} (e\+PATH\+\_\+\+FOLLOWING\+\_\+\+TYPE type, std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Sets the type of follow path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_manager_a346940915839e0706c16a8a66b2ff864}{Add\+Flocking\+Behaviour}} (std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Adds the flocking behaviour to the agents given. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent_manager_ae6584248d9e9de45f4f1710f2842923a}\label{class_agent_manager_ae6584248d9e9de45f4f1710f2842923a}} 
+\index{AgentManager@{AgentManager}!AddAgents@{AddAgents}}
+\index{AddAgents@{AddAgents}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddAgents()}{AddAgents()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Agents (\begin{DoxyParamCaption}\item[{unsigned int}]{agents,  }\item[{sf\+::\+Int\+Rect}]{aperance\+Range,  }\item[{sf\+::\+Color}]{color,  }\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Vector2f}]{base\+Pos }\end{DoxyParamCaption})}
+
+
+
+Adds a number of agents of a certain team. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & how many agents to add \\
+\hline
+{\em aperance\+Range} & the rectangle where the agents can appear \\
+\hline
+{\em color} & the color of the agents \\
+\hline
+{\em team\+Name} & the team they are on \\
+\hline
+{\em base\+Pos} & the point they has to take the flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000105}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a225d6958462607cf67a509140c86c0e2}\label{class_agent_manager_a225d6958462607cf67a509140c86c0e2}} 
+\index{AgentManager@{AgentManager}!AddEvadeTarget@{AddEvadeTarget}}
+\index{AddEvadeTarget@{AddEvadeTarget}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddEvadeTarget()}{AddEvadeTarget()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Evade\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{sf\+::\+Vector2f}]{velocity,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds a evade target to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the target added \\
+\hline
+{\em velocity} & the velocity of the target \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000116}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_ac78e5a03ffb3130c57b049d0f9b07901}\label{class_agent_manager_ac78e5a03ffb3130c57b049d0f9b07901}} 
+\index{AgentManager@{AgentManager}!AddFleeTarget@{AddFleeTarget}}
+\index{AddFleeTarget@{AddFleeTarget}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddFleeTarget()}{AddFleeTarget()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Flee\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds a flee target to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the target added \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000113}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a346940915839e0706c16a8a66b2ff864}\label{class_agent_manager_a346940915839e0706c16a8a66b2ff864}} 
+\index{AgentManager@{AgentManager}!AddFlockingBehaviour@{AddFlockingBehaviour}}
+\index{AddFlockingBehaviour@{AddFlockingBehaviour}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddFlockingBehaviour()}{AddFlockingBehaviour()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Flocking\+Behaviour (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds the flocking behaviour to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000120}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a4d682a249cab815cf33f4e5b163d3b8d}\label{class_agent_manager_a4d682a249cab815cf33f4e5b163d3b8d}} 
+\index{AgentManager@{AgentManager}!AddFollowPathPoint@{AddFollowPathPoint}}
+\index{AddFollowPathPoint@{AddFollowPathPoint}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddFollowPathPoint()}{AddFollowPathPoint()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Follow\+Path\+Point (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds a point to the path to follow to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & the position of the point added \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000118}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_ae49b03401a10505de243e52092e4a15f}\label{class_agent_manager_ae49b03401a10505de243e52092e4a15f}} 
+\index{AgentManager@{AgentManager}!AddObstacleToAvoid@{AddObstacleToAvoid}}
+\index{AddObstacleToAvoid@{AddObstacleToAvoid}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddObstacleToAvoid()}{AddObstacleToAvoid()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Obstacle\+To\+Avoid (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{obstacle,  }\item[{float}]{radious,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds an obstacle to avoid to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obstacle} & the obstacle added \\
+\hline
+{\em radious} & the radious of the obstacle \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000117}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a030927ec3f90d988772eaeb227291a30}\label{class_agent_manager_a030927ec3f90d988772eaeb227291a30}} 
+\index{AgentManager@{AgentManager}!AddPursuitTarget@{AddPursuitTarget}}
+\index{AddPursuitTarget@{AddPursuitTarget}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddPursuitTarget()}{AddPursuitTarget()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Pursuit\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{sf\+::\+Vector2f}]{velocity,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds a pursuit target to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the target added \\
+\hline
+{\em velocity} & the velocity of the target \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000115}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a2564052ab8079a6401ca4df162a765e7}\label{class_agent_manager_a2564052ab8079a6401ca4df162a765e7}} 
+\index{AgentManager@{AgentManager}!AddSeekTarget@{AddSeekTarget}}
+\index{AddSeekTarget@{AddSeekTarget}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddSeekTarget()}{AddSeekTarget()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Seek\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds a seek target to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the target added \\
+\hline
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000112}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_aaba763f2a823bdde76a866a38a49360f}\label{class_agent_manager_aaba763f2a823bdde76a866a38a49360f}} 
+\index{AgentManager@{AgentManager}!AddWanderBehaviour@{AddWanderBehaviour}}
+\index{AddWanderBehaviour@{AddWanderBehaviour}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{AddWanderBehaviour()}{AddWanderBehaviour()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Add\+Wander\+Behaviour (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Adds the wander behaviour to the agents given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & the agents that will be added to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000114}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_aca9e4564b339ef11945ca2edd510b40f}\label{class_agent_manager_aca9e4564b339ef11945ca2edd510b40f}} 
+\index{AgentManager@{AgentManager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialice. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000104}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_af9b94fa339fc27d6d6999c67ea6df932}\label{class_agent_manager_af9b94fa339fc27d6d6999c67ea6df932}} 
+\index{AgentManager@{AgentManager}!GetAgents@{GetAgents}}
+\index{GetAgents@{GetAgents}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{GetAgents()}{GetAgents()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ Agent\+Manager\+::\+Get\+Agents (\begin{DoxyParamCaption}\item[{std\+::string}]{team\+Name = {\ttfamily \char`\"{}All\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Returns a list of agents of a certain team or all the agents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+Name} & the team that the agents come from (blank or \char`\"{}\+All\char`\"{} for all the agents) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000108}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_ab20ad14dd39f29c1849eaecc4ca7978f}\label{class_agent_manager_ab20ad14dd39f29c1849eaecc4ca7978f}} 
+\index{AgentManager@{AgentManager}!Init@{Init}}
+\index{Init@{Init}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$}]{st\+Machine,  }\item[{\mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$}]{anim\+Machine }\end{DoxyParamCaption})}
+
+
+
+Initialice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st\+Machine} & the state machine that will be controlling the agents \\
+\hline
+{\em anim\+Machine} & the animation machine the will be controlling the agents textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000100}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a190584b2ff52917cdcc97e79c4115206}\label{class_agent_manager_a190584b2ff52917cdcc97e79c4115206}} 
+\index{AgentManager@{AgentManager}!RemoveAgent@{RemoveAgent}}
+\index{RemoveAgent@{RemoveAgent}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{RemoveAgent()}{RemoveAgent()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Remove\+Agent (\begin{DoxyParamCaption}\item[{unsigned int}]{agent\+Index }\end{DoxyParamCaption})}
+
+
+
+Delete an agent of a certein index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent\+Index} & the index of the removed agent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000107}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a5ab4514bb822f7776cbdb0f6e20b9d48}\label{class_agent_manager_a5ab4514bb822f7776cbdb0f6e20b9d48}} 
+\index{AgentManager@{AgentManager}!RemoveAgents@{RemoveAgents}}
+\index{RemoveAgents@{RemoveAgents}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{RemoveAgents()}{RemoveAgents()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Remove\+Agents (\begin{DoxyParamCaption}\item[{unsigned int}]{agents,  }\item[{std\+::string}]{team\+Name }\end{DoxyParamCaption})}
+
+
+
+Delete some agents of a team. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & how many agents will be removed \\
+\hline
+{\em team\+Name} & the name of the team that will lose agents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000106}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_aa06d3ec3f1c3768b68d89b5448e351cc}\label{class_agent_manager_aa06d3ec3f1c3768b68d89b5448e351cc}} 
+\index{AgentManager@{AgentManager}!Render@{Render}}
+\index{Render@{Render}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Renders all the agents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window to wich the agents will be rendered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000103}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a764633f55bf8f87f7cd471cdc9ab8c3b}\label{class_agent_manager_a764633f55bf8f87f7cd471cdc9ab8c3b}} 
+\index{AgentManager@{AgentManager}!Restart@{Restart}}
+\index{Restart@{Restart}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{Restart()}{Restart()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Replace all the agents and return them to FOLLOW\+\_\+\+FLAG state. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000101}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a165ad538d88dffdabd6757024108b6bf}\label{class_agent_manager_a165ad538d88dffdabd6757024108b6bf}} 
+\index{AgentManager@{AgentManager}!SetFollowPathMode@{SetFollowPathMode}}
+\index{SetFollowPathMode@{SetFollowPathMode}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{SetFollowPathMode()}{SetFollowPathMode()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Set\+Follow\+Path\+Mode (\begin{DoxyParamCaption}\item[{e\+PATH\+\_\+\+FOLLOWING\+\_\+\+TYPE}]{type,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Sets the type of follow path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type of the follow path \\
+\hline
+{\em agents} & the agents that will be set to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000119}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_afe848b8429d2f325d96bf728520f447d}\label{class_agent_manager_afe848b8429d2f325d96bf728520f447d}} 
+\index{AgentManager@{AgentManager}!Update@{Update}}
+\index{Update@{Update}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates all the agents. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000102}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_aeee914eff3f34f841d7b6ca83d7675bd}\label{class_agent_manager_aeee914eff3f34f841d7b6ca83d7675bd}} 
+\index{AgentManager@{AgentManager}!UpdateTeamAperianceRange@{UpdateTeamAperianceRange}}
+\index{UpdateTeamAperianceRange@{UpdateTeamAperianceRange}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{UpdateTeamAperianceRange()}{UpdateTeamAperianceRange()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Update\+Team\+Aperiance\+Range (\begin{DoxyParamCaption}\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Int\+Rect}]{range }\end{DoxyParamCaption})}
+
+
+
+Updates the range apperance of the team. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+Name} & the team to modify \\
+\hline
+{\em range} & the new range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000109}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a8e958ef586e6c51b270d17902f4d9de9}\label{class_agent_manager_a8e958ef586e6c51b270d17902f4d9de9}} 
+\index{AgentManager@{AgentManager}!UpdateTeamBasePos@{UpdateTeamBasePos}}
+\index{UpdateTeamBasePos@{UpdateTeamBasePos}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{UpdateTeamBasePos()}{UpdateTeamBasePos()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Update\+Team\+Base\+Pos (\begin{DoxyParamCaption}\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Updates the base position of the team. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+Name} & the team to modify \\
+\hline
+{\em pos} & the new position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000110}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_manager_a468b2e476d0e26575aab22da77d727b4}\label{class_agent_manager_a468b2e476d0e26575aab22da77d727b4}} 
+\index{AgentManager@{AgentManager}!UpdateTeamColor@{UpdateTeamColor}}
+\index{UpdateTeamColor@{UpdateTeamColor}!AgentManager@{AgentManager}}
+\doxysubsubsection{\texorpdfstring{UpdateTeamColor()}{UpdateTeamColor()}}
+{\footnotesize\ttfamily void Agent\+Manager\+::\+Update\+Team\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Updates the color of the team. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+Name} & the team to modify \\
+\hline
+{\em color} & the new color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000111}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent\+Manager.\+h\item 
+src/Agent\+Manager.\+cpp\end{DoxyCompactItemize}

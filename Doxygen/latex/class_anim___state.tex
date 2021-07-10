@@ -1,0 +1,41 @@
+\hypertarget{class_anim___state}{}\doxysection{Anim\+\_\+\+State Class Reference}
+\label{class_anim___state}\index{Anim\_State@{Anim\_State}}
+Inheritance diagram for Anim\+\_\+\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{class_anim___state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_anim___state_ade093f499f4700905e037b70e4a0ddc0}\label{class_anim___state_ade093f499f4700905e037b70e4a0ddc0}} 
+virtual void {\bfseries Enter} (class \mbox{\hyperlink{class_player}{Player}} $\ast$player)
+\item 
+\mbox{\Hypertarget{class_anim___state_a9cab30068cc11343f090378aa6a94ac2}\label{class_anim___state_a9cab30068cc11343f090378aa6a94ac2}} 
+virtual e\+ANIM\+\_\+\+TYPE {\bfseries Update} (class \mbox{\hyperlink{class_player}{Player}} $\ast$player)
+\item 
+\mbox{\Hypertarget{class_anim___state_a20f1c3dda208628e32876f3596e500c6}\label{class_anim___state_a20f1c3dda208628e32876f3596e500c6}} 
+virtual void {\bfseries Exit} (class \mbox{\hyperlink{class_player}{Player}} $\ast$player)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_anim___state_a1213cc97698a13589e0d6ac48e728d0e}\label{class_anim___state_a1213cc97698a13589e0d6ac48e728d0e}} 
+std\+::vector$<$ sf\+::\+Int\+Rect $>$ {\bfseries m\+\_\+sequence\+Rects}
+\item 
+\mbox{\Hypertarget{class_anim___state_a56e9381081de534a5738c925cb7fd6af}\label{class_anim___state_a56e9381081de534a5738c925cb7fd6af}} 
+sf\+::\+Texture $\ast$ {\bfseries m\+\_\+atlas\+Map} = nullptr
+\item 
+\mbox{\Hypertarget{class_anim___state_a93675385eeafd6dd290f9c28a9cf70da}\label{class_anim___state_a93675385eeafd6dd290f9c28a9cf70da}} 
+float {\bfseries m\+\_\+fps} = 0
+\item 
+\mbox{\Hypertarget{class_anim___state_ac10fb01be5927fd51571c5141a29271e}\label{class_anim___state_ac10fb01be5927fd51571c5141a29271e}} 
+bool {\bfseries m\+\_\+repeat} = false
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Anim\+\_\+\+State.\+h\item 
+src/Anim\+\_\+\+State.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{class_agent___state}{}\doxysection{Agent\+\_\+\+State Class Reference}
+\label{class_agent___state}\index{Agent\_State@{Agent\_State}}
+
+
+Tha father of all the functional states.  
+
+
+
+
+{\ttfamily \#include $<$Agent\+\_\+\+State.\+h$>$}
+
+Inheritance diagram for Agent\+\_\+\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.349398cm]{class_agent___state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_agent___state_a445e1acae091199d8c500c35100a883b}{Enter}} ()=0
+\begin{DoxyCompactList}\small\item\em Execute when the state starts. \end{DoxyCompactList}\item 
+virtual e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent___state_a724628ea8d889dfbbcdb280239665c7a}{Update}} (\mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)=0
+\begin{DoxyCompactList}\small\item\em Updates the state and handles the state changing. Returns the next state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_agent___state_a057137a99b596b12171e7626086e178e}{Exit}} ()=0
+\begin{DoxyCompactList}\small\item\em Execute when the states finishes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent___state_ae3d7a740a97c997d067a877309d356be}\label{class_agent___state_ae3d7a740a97c997d067a877309d356be}} 
+\mbox{\hyperlink{class_agent}{Agent}} $\ast$ {\bfseries m\+\_\+player}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tha father of all the functional states. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent___state_a445e1acae091199d8c500c35100a883b}\label{class_agent___state_a445e1acae091199d8c500c35100a883b}} 
+\index{Agent\_State@{Agent\_State}!Enter@{Enter}}
+\index{Enter@{Enter}!Agent\_State@{Agent\_State}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily virtual void Agent\+\_\+\+State\+::\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Execute when the state starts. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000091}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_agent___win_lose_state_ac05a38e7ed48b8635f687b2bb8c96862}{Agent\+\_\+\+Win\+Lose\+State}}, \mbox{\hyperlink{class_agent___protect_flag_state_a7c60fbb339f0164d0c39ed1c0e8abdb8}{Agent\+\_\+\+Protect\+Flag\+State}}, \mbox{\hyperlink{class_agent___has_flag_state_aa633c5865d9eaa3edc980624fced2b8b}{Agent\+\_\+\+Has\+Flag\+State}}, \mbox{\hyperlink{class_agent___follow_flag_state_a5b28196c4bd3dd7580bb8542f71b317b}{Agent\+\_\+\+Follow\+Flag\+State}}, and \mbox{\hyperlink{class_agent___follow_carrier_state_aea09b977916cf1016105ab5b36f9dfe1}{Agent\+\_\+\+Follow\+Carrier\+State}}.
+
+\mbox{\Hypertarget{class_agent___state_a057137a99b596b12171e7626086e178e}\label{class_agent___state_a057137a99b596b12171e7626086e178e}} 
+\index{Agent\_State@{Agent\_State}!Exit@{Exit}}
+\index{Exit@{Exit}!Agent\_State@{Agent\_State}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily virtual void Agent\+\_\+\+State\+::\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Execute when the states finishes. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000093}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_agent___win_lose_state_ad2e6fa56b55a7426329432c56d87ca76}{Agent\+\_\+\+Win\+Lose\+State}}, \mbox{\hyperlink{class_agent___protect_flag_state_ae18689c1634a6030e8805b57fcd1b589}{Agent\+\_\+\+Protect\+Flag\+State}}, \mbox{\hyperlink{class_agent___has_flag_state_a2617e83bf2b6e79416c6343b13750eee}{Agent\+\_\+\+Has\+Flag\+State}}, \mbox{\hyperlink{class_agent___follow_flag_state_af1182d92c5ef3d2b22c4193fe49e22ab}{Agent\+\_\+\+Follow\+Flag\+State}}, and \mbox{\hyperlink{class_agent___follow_carrier_state_a63cc45b4dca2de9204d66928bf4412a3}{Agent\+\_\+\+Follow\+Carrier\+State}}.
+
+\mbox{\Hypertarget{class_agent___state_a724628ea8d889dfbbcdb280239665c7a}\label{class_agent___state_a724628ea8d889dfbbcdb280239665c7a}} 
+\index{Agent\_State@{Agent\_State}!Update@{Update}}
+\index{Update@{Update}!Agent\_State@{Agent\_State}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE Agent\+\_\+\+State\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the state and handles the state changing. Returns the next state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent that will be controlling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000092}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_agent___win_lose_state_aaa3f1369d3defb95022c2d3333aadb9c}{Agent\+\_\+\+Win\+Lose\+State}}, \mbox{\hyperlink{class_agent___protect_flag_state_aa1c38a3c391914123a20bda7b7519a53}{Agent\+\_\+\+Protect\+Flag\+State}}, \mbox{\hyperlink{class_agent___has_flag_state_a5166c92aae1c466b567798507d661cae}{Agent\+\_\+\+Has\+Flag\+State}}, \mbox{\hyperlink{class_agent___follow_flag_state_a8a55babf51447e04ca94d7f11cd629ac}{Agent\+\_\+\+Follow\+Flag\+State}}, and \mbox{\hyperlink{class_agent___follow_carrier_state_a810228547ca71eb1ca96e4c738750281}{Agent\+\_\+\+Follow\+Carrier\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent\+\_\+\+State.\+h\end{DoxyCompactItemize}

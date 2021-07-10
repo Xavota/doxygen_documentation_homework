@@ -1,0 +1,813 @@
+\hypertarget{class_agent}{}\doxysection{Agent Class Reference}
+\label{class_agent}\index{Agent@{Agent}}
+
+
+The agent, controlled by their own AI with steering behaviours.  
+
+
+
+
+{\ttfamily \#include $<$Agent.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_agent_ada33365effda2d5d105044e0905fac76}{Agent}} (int x, int y, sf\+::\+Color color, std\+::string team\+Name, sf\+::\+Vector2f base\+Pos, \mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$st\+Machine, \mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$anim\+Machine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a7bb469e02ba9b63d2444d190da196cc2}{Init}} (int x, int y, sf\+::\+Color color, std\+::string team\+Name, sf\+::\+Vector2f base\+Pos, \mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$st\+Machine, \mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$anim\+Machine)
+\begin{DoxyCompactList}\small\item\em Initialice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_add880038afb65b48ec01f627dc9c3d5e}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the agent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a498dcb252b03d1e62f56b01ed91af844}{Move}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Moves the agent. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_agent_aceb5fe23fb5605e94cbc2a5a125d45e8}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the agent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_aea6ad1b382ed49db1eb6219fba0aee3d}{set\+Position}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of the agent. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_agent_a5c4ac1c73d88ba56c4f430364a94aa50}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Retursn the current velocity of the agent. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_agent_ad4dcfe6340a08085fbab6cb8161a6238}{get\+Orientation}} ()
+\begin{DoxyCompactList}\small\item\em Returns the direccion of the agent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a00431074a4dc87653018152a1cef54dd}{Render}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Renders the agent and its components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a827938817ee88a4099585df4a3b28371}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Free memory if needed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ab3d026b94693d879852578acda612e4e}{Add\+Seek\+Target}} (sf\+::\+Vector2f target)
+\begin{DoxyCompactList}\small\item\em Adds a target to the seek behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a27d753498623add8e252449ea647a05a}{Add\+Flee\+Target}} (sf\+::\+Vector2f target)
+\begin{DoxyCompactList}\small\item\em Adds a target to the flee behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_aaf4f3b6261a4899f1fbb4291f3ddc87b}{Add\+Wander\+Behaviour}} ()
+\begin{DoxyCompactList}\small\item\em Adds the wander behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ab47f88decc9727cadc05c9d7d3f606bc}{Add\+Pursuit\+Target}} (sf\+::\+Vector2f target, sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Adds a target to the pursuit behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ae82aa29d50ca4319ce14b5d8430dfe6b}{Add\+Evade\+Target}} (sf\+::\+Vector2f target, sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Adds a target to the evade behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a6cd06d21a78b5e01a8aaeac9a81f49f2}{Add\+Obstacle\+To\+Avoid}} (sf\+::\+Vector2f obstacle, float radious)
+\begin{DoxyCompactList}\small\item\em Adds a target to the obstacle behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a9c51a2908c46e9bb878a4973322daacc}{Add\+Follow\+Path\+Point}} (sf\+::\+Vector2f point)
+\begin{DoxyCompactList}\small\item\em Adds a target to the follow path behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_af7cf27935f2e48dd2b5111f84012f3f5}{Set\+Follow\+Path\+Mode}} (e\+PATH\+\_\+\+FOLLOWING\+\_\+\+TYPE type)
+\begin{DoxyCompactList}\small\item\em Sets the type of the follow path behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ad6bc6cbb76bfd3e73a19c22a31c9212e}{Add\+Flocking\+Behaviour}} ()
+\begin{DoxyCompactList}\small\item\em Adds the flocking behaviour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ac9a0ba11529bfc4ae4cdbe21b238bc58}{Set\+Flocking\+Agents\+Group}} (vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$ agents)
+\begin{DoxyCompactList}\small\item\em Sets the flocking gruop for the agent. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_agent_a37ea23919aca7b6e9935352b23febc8d}{Is\+Flocking}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the agent has the flocking behaviour. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_agent_aa91d86d3f329bdd3bacab40ba81f4b65}{Get\+Flocking\+Group\+Radious}} ()
+\begin{DoxyCompactList}\small\item\em Returns the radiuos of the flocking behaviour gruop. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_agent_a9cb2006aebc0847abce6c26b1ac95fed}{Get\+Team}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the team he is on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a48bc547a5932d06c7854434b0e93b5df}{Set\+Is\+Seeing\+Wall}} (bool wall)
+\begin{DoxyCompactList}\small\item\em Set true if its neer a wall and it\textquotesingle{}s seeing it. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_agent_a5397713b9f22dabf4c32daa4dd324f3a}{Get\+Is\+Seeing\+Wall}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if it\textquotesingle{}s seeing a wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_ab3ba7be265e50f73ac8e284c902df61d}{place\+Line\+From\+Two\+Points}} (sf\+::\+Rectangle\+Shape \&line, sf\+::\+Vector2f pos1, sf\+::\+Vector2f pos2)
+\begin{DoxyCompactList}\small\item\em Returns the right vector of the vector passed. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_agent_a2908e95f2df31482557479a3851a6c48}{Get\+Base\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the agents base. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_aab50afb4882bf980f0967aafb7828576}{Update\+Base\+Pos}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Updates the position of the agent\textquotesingle{}s base. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_agent_a283c128d11d05815eb528f1c7b0a52bb}{Get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Returns the color of the agent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_af4fdd201a4782231e9bb88eb673cb3cb}{Update\+Color}} (sf\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Updates the color of the agent. \end{DoxyCompactList}\item 
+e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent_a97b4895ca6bef16b897ec43c06d4f1ef}{Get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a3fb01b4e2b6f2d41c512f7f830a1bfb3}{Set\+State}} (e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE state)
+\begin{DoxyCompactList}\small\item\em Updates the current state. \end{DoxyCompactList}\item 
+e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent_a9c7e6ff552f56c9b80cf57e35427b003}{Get\+Anim\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current state of the animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a82eaa63e70c2eca6645a423c8cd752e4}{Set\+Anim\+State}} (e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE state)
+\begin{DoxyCompactList}\small\item\em Updates the current state of the animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a441ef8e5dd7ba9f6bf0c9b53dd480fdc}{Set\+Texture}} (sf\+::\+Texture $\ast$tex)
+\begin{DoxyCompactList}\small\item\em Sets the texture of the agent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent_a6faecd233baaebeb827306d546070b6c}{Set\+Texture\+Rect}} (sf\+::\+Int\+Rect rect)
+\begin{DoxyCompactList}\small\item\em Sets the texture rect of the texture on the agent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_agent_a69d3e49d312d7ee9bda267c187b5c050}{vector\+Length}} (sf\+::\+Vector2f vec)
+\begin{DoxyCompactList}\small\item\em Returns the length of the vector. \end{DoxyCompactList}\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{class_agent_a30e4c414b9dba544f598d69a5a0cfead}{normalize\+Vector}} (sf\+::\+Vector2f vec)
+\begin{DoxyCompactList}\small\item\em Returns the vector normalized. \end{DoxyCompactList}\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{class_agent_a17ed1731d96bc1191e66233ddc1813e5}{truncate\+Vector}} (sf\+::\+Vector2f vec, float length)
+\begin{DoxyCompactList}\small\item\em Returns the vector with the length specified. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_agent_a2bb59df679a23597358a82de59a77e63}{distance\+Vector}} (sf\+::\+Vector2f vec1, sf\+::\+Vector2f vec2)
+\begin{DoxyCompactList}\small\item\em Returns the distance between two vectors. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_agent_a3cb0d2d39ccb6f913ef4ecb1ca345fad}{dot}} (sf\+::\+Vector2f vec1, sf\+::\+Vector2f vec2)
+\begin{DoxyCompactList}\small\item\em Returns the dot product between 2 vectors. \end{DoxyCompactList}\item 
+static sf\+::\+Vector2f \mbox{\hyperlink{class_agent_a926b7148619bcb916f2c4d6a3e5b6e24}{right\+Vector}} (sf\+::\+Vector2f vec)
+\begin{DoxyCompactList}\small\item\em Returns the right vector of the vector passed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_a15611bdc6a3f6204839b8bd76546f2f4}\label{class_agent_a15611bdc6a3f6204839b8bd76546f2f4}} 
+class {\bfseries Agent\+\_\+\+Win\+Lose\+State}
+\item 
+\mbox{\Hypertarget{class_agent_a03f11c99c5c5bf314cb1e1c05c5967f5}\label{class_agent_a03f11c99c5c5bf314cb1e1c05c5967f5}} 
+class {\bfseries Agent\+\_\+\+Anim\+State}
+\item 
+\mbox{\Hypertarget{class_agent_a323af7ba83f01aabc5d80ed6b0a78796}\label{class_agent_a323af7ba83f01aabc5d80ed6b0a78796}} 
+class {\bfseries Agent\+\_\+\+Anim\+Has\+Flag\+State}
+\item 
+\mbox{\Hypertarget{class_agent_aabd80854032e3c54c21279c051c5d816}\label{class_agent_aabd80854032e3c54c21279c051c5d816}} 
+class {\bfseries Agent\+\_\+\+Anim\+Running\+State}
+\item 
+\mbox{\Hypertarget{class_agent_af51f772316a81e5128b8062bd5892396}\label{class_agent_af51f772316a81e5128b8062bd5892396}} 
+class {\bfseries Agent\+\_\+\+Anim\+Win\+State}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The agent, controlled by their own AI with steering behaviours. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_agent_ada33365effda2d5d105044e0905fac76}\label{class_agent_ada33365effda2d5d105044e0905fac76}} 
+\index{Agent@{Agent}!Agent@{Agent}}
+\index{Agent@{Agent}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Agent()}{Agent()}}
+{\footnotesize\ttfamily Agent\+::\+Agent (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{sf\+::\+Color}]{color,  }\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Vector2f}]{base\+Pos,  }\item[{\mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$}]{st\+Machine,  }\item[{\mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$}]{anim\+Machine }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the position in x coordinate \\
+\hline
+{\em y} & the position in y coordinate \\
+\hline
+{\em color} & the color of the agent \\
+\hline
+{\em team\+Name} & the team it is on \\
+\hline
+{\em base\+Pos} & the point it has to take the flag \\
+\hline
+{\em st\+Machine} & the state machine that will be controlling it \\
+\hline
+{\em anim\+Machine} & the animation machine the will be controlling its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent_ae82aa29d50ca4319ce14b5d8430dfe6b}\label{class_agent_ae82aa29d50ca4319ce14b5d8430dfe6b}} 
+\index{Agent@{Agent}!AddEvadeTarget@{AddEvadeTarget}}
+\index{AddEvadeTarget@{AddEvadeTarget}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddEvadeTarget()}{AddEvadeTarget()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Evade\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the evade behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the position it will evade \\
+\hline
+{\em velocity} & the velocity of the target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000015}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a27d753498623add8e252449ea647a05a}\label{class_agent_a27d753498623add8e252449ea647a05a}} 
+\index{Agent@{Agent}!AddFleeTarget@{AddFleeTarget}}
+\index{AddFleeTarget@{AddFleeTarget}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddFleeTarget()}{AddFleeTarget()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Flee\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the flee behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the position it will flee of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000012}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ad6bc6cbb76bfd3e73a19c22a31c9212e}\label{class_agent_ad6bc6cbb76bfd3e73a19c22a31c9212e}} 
+\index{Agent@{Agent}!AddFlockingBehaviour@{AddFlockingBehaviour}}
+\index{AddFlockingBehaviour@{AddFlockingBehaviour}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddFlockingBehaviour()}{AddFlockingBehaviour()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Flocking\+Behaviour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds the flocking behaviour. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000019}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a9c51a2908c46e9bb878a4973322daacc}\label{class_agent_a9c51a2908c46e9bb878a4973322daacc}} 
+\index{Agent@{Agent}!AddFollowPathPoint@{AddFollowPathPoint}}
+\index{AddFollowPathPoint@{AddFollowPathPoint}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddFollowPathPoint()}{AddFollowPathPoint()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Follow\+Path\+Point (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the follow path behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the position of the next path point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000017}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a6cd06d21a78b5e01a8aaeac9a81f49f2}\label{class_agent_a6cd06d21a78b5e01a8aaeac9a81f49f2}} 
+\index{Agent@{Agent}!AddObstacleToAvoid@{AddObstacleToAvoid}}
+\index{AddObstacleToAvoid@{AddObstacleToAvoid}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddObstacleToAvoid()}{AddObstacleToAvoid()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Obstacle\+To\+Avoid (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{obstacle,  }\item[{float}]{radious }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the obstacle behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obstacle} & the position of the obstacle \\
+\hline
+{\em radious} & the radious of the obstacle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000016}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ab47f88decc9727cadc05c9d7d3f606bc}\label{class_agent_ab47f88decc9727cadc05c9d7d3f606bc}} 
+\index{Agent@{Agent}!AddPursuitTarget@{AddPursuitTarget}}
+\index{AddPursuitTarget@{AddPursuitTarget}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddPursuitTarget()}{AddPursuitTarget()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Pursuit\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target,  }\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the pursuit behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the position it will pursue \\
+\hline
+{\em velocity} & the velocity of the target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000014}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ab3d026b94693d879852578acda612e4e}\label{class_agent_ab3d026b94693d879852578acda612e4e}} 
+\index{Agent@{Agent}!AddSeekTarget@{AddSeekTarget}}
+\index{AddSeekTarget@{AddSeekTarget}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddSeekTarget()}{AddSeekTarget()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Seek\+Target (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{target }\end{DoxyParamCaption})}
+
+
+
+Adds a target to the seek behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & the position it will seek \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000011}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_aaf4f3b6261a4899f1fbb4291f3ddc87b}\label{class_agent_aaf4f3b6261a4899f1fbb4291f3ddc87b}} 
+\index{Agent@{Agent}!AddWanderBehaviour@{AddWanderBehaviour}}
+\index{AddWanderBehaviour@{AddWanderBehaviour}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{AddWanderBehaviour()}{AddWanderBehaviour()}}
+{\footnotesize\ttfamily void Agent\+::\+Add\+Wander\+Behaviour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds the wander behaviour. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000013}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a827938817ee88a4099585df4a3b28371}\label{class_agent_a827938817ee88a4099585df4a3b28371}} 
+\index{Agent@{Agent}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Agent\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Free memory if needed. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a2bb59df679a23597358a82de59a77e63}\label{class_agent_a2bb59df679a23597358a82de59a77e63}} 
+\index{Agent@{Agent}!distanceVector@{distanceVector}}
+\index{distanceVector@{distanceVector}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{distanceVector()}{distanceVector()}}
+{\footnotesize\ttfamily float Agent\+::distance\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec1,  }\item[{sf\+::\+Vector2f}]{vec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the distance between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec1} & the first vector checking \\
+\hline
+{\em vec2} & the second vector checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000043}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a3cb0d2d39ccb6f913ef4ecb1ca345fad}\label{class_agent_a3cb0d2d39ccb6f913ef4ecb1ca345fad}} 
+\index{Agent@{Agent}!dot@{dot}}
+\index{dot@{dot}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily float Agent\+::dot (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec1,  }\item[{sf\+::\+Vector2f}]{vec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the dot product between 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec1} & the first vector checking \\
+\hline
+{\em vec2} & the second vector checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000044}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a9c7e6ff552f56c9b80cf57e35427b003}\label{class_agent_a9c7e6ff552f56c9b80cf57e35427b003}} 
+\index{Agent@{Agent}!GetAnimState@{GetAnimState}}
+\index{GetAnimState@{GetAnimState}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetAnimState()}{GetAnimState()}}
+{\footnotesize\ttfamily e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE Agent\+::\+Get\+Anim\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current state of the animation. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000053}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a2908e95f2df31482557479a3851a6c48}\label{class_agent_a2908e95f2df31482557479a3851a6c48}} 
+\index{Agent@{Agent}!GetBasePos@{GetBasePos}}
+\index{GetBasePos@{GetBasePos}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetBasePos()}{GetBasePos()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::\+Get\+Base\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the position of the agents base. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000047}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a283c128d11d05815eb528f1c7b0a52bb}\label{class_agent_a283c128d11d05815eb528f1c7b0a52bb}} 
+\index{Agent@{Agent}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily sf\+::\+Color Agent\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the color of the agent. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000049}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_aa91d86d3f329bdd3bacab40ba81f4b65}\label{class_agent_aa91d86d3f329bdd3bacab40ba81f4b65}} 
+\index{Agent@{Agent}!GetFlockingGroupRadious@{GetFlockingGroupRadious}}
+\index{GetFlockingGroupRadious@{GetFlockingGroupRadious}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetFlockingGroupRadious()}{GetFlockingGroupRadious()}}
+{\footnotesize\ttfamily float Agent\+::\+Get\+Flocking\+Group\+Radious (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the radiuos of the flocking behaviour gruop. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000022}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a5397713b9f22dabf4c32daa4dd324f3a}\label{class_agent_a5397713b9f22dabf4c32daa4dd324f3a}} 
+\index{Agent@{Agent}!GetIsSeeingWall@{GetIsSeeingWall}}
+\index{GetIsSeeingWall@{GetIsSeeingWall}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetIsSeeingWall()}{GetIsSeeingWall()}}
+{\footnotesize\ttfamily bool Agent\+::\+Get\+Is\+Seeing\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if it\textquotesingle{}s seeing a wall. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000025}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ad4dcfe6340a08085fbab6cb8161a6238}\label{class_agent_ad4dcfe6340a08085fbab6cb8161a6238}} 
+\index{Agent@{Agent}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the direccion of the agent. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000008}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_aceb5fe23fb5605e94cbc2a5a125d45e8}\label{class_agent_aceb5fe23fb5605e94cbc2a5a125d45e8}} 
+\index{Agent@{Agent}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the position of the agent. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000005}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a97b4895ca6bef16b897ec43c06d4f1ef}\label{class_agent_a97b4895ca6bef16b897ec43c06d4f1ef}} 
+\index{Agent@{Agent}!GetState@{GetState}}
+\index{GetState@{GetState}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetState()}{GetState()}}
+{\footnotesize\ttfamily e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE Agent\+::\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the current state. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000051}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a9cb2006aebc0847abce6c26b1ac95fed}\label{class_agent_a9cb2006aebc0847abce6c26b1ac95fed}} 
+\index{Agent@{Agent}!GetTeam@{GetTeam}}
+\index{GetTeam@{GetTeam}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{GetTeam()}{GetTeam()}}
+{\footnotesize\ttfamily std\+::string Agent\+::\+Get\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the name of the team he is on. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000023}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a5c4ac1c73d88ba56c4f430364a94aa50}\label{class_agent_a5c4ac1c73d88ba56c4f430364a94aa50}} 
+\index{Agent@{Agent}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retursn the current velocity of the agent. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000007}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a7bb469e02ba9b63d2444d190da196cc2}\label{class_agent_a7bb469e02ba9b63d2444d190da196cc2}} 
+\index{Agent@{Agent}!Init@{Init}}
+\index{Init@{Init}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Agent\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{sf\+::\+Color}]{color,  }\item[{std\+::string}]{team\+Name,  }\item[{sf\+::\+Vector2f}]{base\+Pos,  }\item[{\mbox{\hyperlink{class_agent___state_machine}{Agent\+\_\+\+State\+Machine}} $\ast$}]{st\+Machine,  }\item[{\mbox{\hyperlink{class_agent___anim_machine}{Agent\+\_\+\+Anim\+Machine}} $\ast$}]{anim\+Machine }\end{DoxyParamCaption})}
+
+
+
+Initialice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the position in x coordinate \\
+\hline
+{\em y} & the position in y coordinate \\
+\hline
+{\em color} & the color of the agent \\
+\hline
+{\em team\+Name} & the team it is on \\
+\hline
+{\em base\+Pos} & the point it has to take the flag \\
+\hline
+{\em st\+Machine} & the state machine that will be controlling it \\
+\hline
+{\em anim\+Machine} & the animation machine the will be controlling its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a37ea23919aca7b6e9935352b23febc8d}\label{class_agent_a37ea23919aca7b6e9935352b23febc8d}} 
+\index{Agent@{Agent}!IsFlocking@{IsFlocking}}
+\index{IsFlocking@{IsFlocking}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{IsFlocking()}{IsFlocking()}}
+{\footnotesize\ttfamily bool Agent\+::\+Is\+Flocking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the agent has the flocking behaviour. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000021}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a498dcb252b03d1e62f56b01ed91af844}\label{class_agent_a498dcb252b03d1e62f56b01ed91af844}} 
+\index{Agent@{Agent}!Move@{Move}}
+\index{Move@{Move}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Agent\+::\+Move (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Moves the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity} & the velocity in pixels per second of the movement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000004}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a30e4c414b9dba544f598d69a5a0cfead}\label{class_agent_a30e4c414b9dba544f598d69a5a0cfead}} 
+\index{Agent@{Agent}!normalizeVector@{normalizeVector}}
+\index{normalizeVector@{normalizeVector}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{normalizeVector()}{normalizeVector()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::normalize\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the vector normalized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & the vector checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000041}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ab3ba7be265e50f73ac8e284c902df61d}\label{class_agent_ab3ba7be265e50f73ac8e284c902df61d}} 
+\index{Agent@{Agent}!placeLineFromTwoPoints@{placeLineFromTwoPoints}}
+\index{placeLineFromTwoPoints@{placeLineFromTwoPoints}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{placeLineFromTwoPoints()}{placeLineFromTwoPoints()}}
+{\footnotesize\ttfamily void Agent\+::place\+Line\+From\+Two\+Points (\begin{DoxyParamCaption}\item[{sf\+::\+Rectangle\+Shape \&}]{line,  }\item[{sf\+::\+Vector2f}]{pos1,  }\item[{sf\+::\+Vector2f}]{pos2 }\end{DoxyParamCaption})}
+
+
+
+Returns the right vector of the vector passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the rectangle shape the will be turning into the line needed \\
+\hline
+{\em pos1} & start position \\
+\hline
+{\em pos2} & end position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000046}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a00431074a4dc87653018152a1cef54dd}\label{class_agent_a00431074a4dc87653018152a1cef54dd}} 
+\index{Agent@{Agent}!Render@{Render}}
+\index{Render@{Render}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Agent\+::\+Render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Renders the agent and its components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window to wich it will be rendered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000009}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a926b7148619bcb916f2c4d6a3e5b6e24}\label{class_agent_a926b7148619bcb916f2c4d6a3e5b6e24}} 
+\index{Agent@{Agent}!rightVector@{rightVector}}
+\index{rightVector@{rightVector}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{rightVector()}{rightVector()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::right\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the right vector of the vector passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & the vector checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000045}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a82eaa63e70c2eca6645a423c8cd752e4}\label{class_agent_a82eaa63e70c2eca6645a423c8cd752e4}} 
+\index{Agent@{Agent}!SetAnimState@{SetAnimState}}
+\index{SetAnimState@{SetAnimState}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetAnimState()}{SetAnimState()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Anim\+State (\begin{DoxyParamCaption}\item[{e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE}]{state }\end{DoxyParamCaption})}
+
+
+
+Updates the current state of the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the new state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000054}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_ac9a0ba11529bfc4ae4cdbe21b238bc58}\label{class_agent_ac9a0ba11529bfc4ae4cdbe21b238bc58}} 
+\index{Agent@{Agent}!SetFlockingAgentsGroup@{SetFlockingAgentsGroup}}
+\index{SetFlockingAgentsGroup@{SetFlockingAgentsGroup}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetFlockingAgentsGroup()}{SetFlockingAgentsGroup()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Flocking\+Agents\+Group (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_agent}{Agent}} $\ast$ $>$}]{agents }\end{DoxyParamCaption})}
+
+
+
+Sets the flocking gruop for the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agents} & the agents of its flocking group \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000020}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_af7cf27935f2e48dd2b5111f84012f3f5}\label{class_agent_af7cf27935f2e48dd2b5111f84012f3f5}} 
+\index{Agent@{Agent}!SetFollowPathMode@{SetFollowPathMode}}
+\index{SetFollowPathMode@{SetFollowPathMode}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetFollowPathMode()}{SetFollowPathMode()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Follow\+Path\+Mode (\begin{DoxyParamCaption}\item[{e\+PATH\+\_\+\+FOLLOWING\+\_\+\+TYPE}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of the follow path behaviour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the kind of follow path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000018}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a48bc547a5932d06c7854434b0e93b5df}\label{class_agent_a48bc547a5932d06c7854434b0e93b5df}} 
+\index{Agent@{Agent}!SetIsSeeingWall@{SetIsSeeingWall}}
+\index{SetIsSeeingWall@{SetIsSeeingWall}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetIsSeeingWall()}{SetIsSeeingWall()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Is\+Seeing\+Wall (\begin{DoxyParamCaption}\item[{bool}]{wall }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set true if its neer a wall and it\textquotesingle{}s seeing it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wall} & is seeing wall \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000024}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_aea6ad1b382ed49db1eb6219fba0aee3d}\label{class_agent_aea6ad1b382ed49db1eb6219fba0aee3d}} 
+\index{Agent@{Agent}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Agent\+::set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the position of the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the new position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000006}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a3fb01b4e2b6f2d41c512f7f830a1bfb3}\label{class_agent_a3fb01b4e2b6f2d41c512f7f830a1bfb3}} 
+\index{Agent@{Agent}!SetState@{SetState}}
+\index{SetState@{SetState}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+State (\begin{DoxyParamCaption}\item[{e\+AGENT\+\_\+\+STATE\+\_\+\+TYPE}]{state }\end{DoxyParamCaption})}
+
+
+
+Updates the current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stae} & the new state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000052}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a441ef8e5dd7ba9f6bf0c9b53dd480fdc}\label{class_agent_a441ef8e5dd7ba9f6bf0c9b53dd480fdc}} 
+\index{Agent@{Agent}!SetTexture@{SetTexture}}
+\index{SetTexture@{SetTexture}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetTexture()}{SetTexture()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Texture $\ast$}]{tex }\end{DoxyParamCaption})}
+
+
+
+Sets the texture of the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tec} & the new texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000055}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a6faecd233baaebeb827306d546070b6c}\label{class_agent_a6faecd233baaebeb827306d546070b6c}} 
+\index{Agent@{Agent}!SetTextureRect@{SetTextureRect}}
+\index{SetTextureRect@{SetTextureRect}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{SetTextureRect()}{SetTextureRect()}}
+{\footnotesize\ttfamily void Agent\+::\+Set\+Texture\+Rect (\begin{DoxyParamCaption}\item[{sf\+::\+Int\+Rect}]{rect }\end{DoxyParamCaption})}
+
+
+
+Sets the texture rect of the texture on the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & the texture rect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000056}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a17ed1731d96bc1191e66233ddc1813e5}\label{class_agent_a17ed1731d96bc1191e66233ddc1813e5}} 
+\index{Agent@{Agent}!truncateVector@{truncateVector}}
+\index{truncateVector@{truncateVector}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{truncateVector()}{truncateVector()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Agent\+::truncate\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec,  }\item[{float}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the vector with the length specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & the vector checking \\
+\hline
+{\em length} & the new length of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000042}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_add880038afb65b48ec01f627dc9c3d5e}\label{class_agent_add880038afb65b48ec01f627dc9c3d5e}} 
+\index{Agent@{Agent}!Update@{Update}}
+\index{Update@{Update}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Agent\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the agent. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_aab50afb4882bf980f0967aafb7828576}\label{class_agent_aab50afb4882bf980f0967aafb7828576}} 
+\index{Agent@{Agent}!UpdateBasePos@{UpdateBasePos}}
+\index{UpdateBasePos@{UpdateBasePos}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{UpdateBasePos()}{UpdateBasePos()}}
+{\footnotesize\ttfamily void Agent\+::\+Update\+Base\+Pos (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the agent\textquotesingle{}s base. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the new position of the base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000048}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_af4fdd201a4782231e9bb88eb673cb3cb}\label{class_agent_af4fdd201a4782231e9bb88eb673cb3cb}} 
+\index{Agent@{Agent}!UpdateColor@{UpdateColor}}
+\index{UpdateColor@{UpdateColor}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{UpdateColor()}{UpdateColor()}}
+{\footnotesize\ttfamily void Agent\+::\+Update\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Updates the color of the agent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the new color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000050}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_agent_a69d3e49d312d7ee9bda267c187b5c050}\label{class_agent_a69d3e49d312d7ee9bda267c187b5c050}} 
+\index{Agent@{Agent}!vectorLength@{vectorLength}}
+\index{vectorLength@{vectorLength}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{vectorLength()}{vectorLength()}}
+{\footnotesize\ttfamily float Agent\+::vector\+Length (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the length of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & the vector checking \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000040}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent.\+h\item 
+src/Agent.\+cpp\end{DoxyCompactItemize}

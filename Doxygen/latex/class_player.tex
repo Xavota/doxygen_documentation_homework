@@ -1,0 +1,139 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_a92df89e2d4863438007179e9db394170}{Init}} (sf\+::\+Vector2f pos, sf\+::\+Vector2f size, sf\+::\+Texture $\ast$tex, float velocity, float jump\+Strength, \mbox{\hyperlink{class_state_machine}{State\+Machine}} $\ast$machine, \mbox{\hyperlink{class_animation}{Animation}} $\ast$anim\+Machine)
+\begin{DoxyCompactList}\small\item\em Initiates the \mbox{\hyperlink{class_player}{Player}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a05b60cac1922c5be5c1be16baffa4497}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the logic of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a5cb9efd2fc6fbea5d568ae7de19062f1}{Render}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Renders the player on a window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_af73bd2356308d9ad8faa0045ca703570}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Free the memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a82717d2ff2f6f8d9a9aff7fb0d9024d1}\label{class_player_a82717d2ff2f6f8d9a9aff7fb0d9024d1}} 
+e\+STATE\+\_\+\+TYPE {\bfseries Get\+State} ()
+\item 
+\mbox{\Hypertarget{class_player_aae189747fdce44d1d91c0c74c19e050b}\label{class_player_aae189747fdce44d1d91c0c74c19e050b}} 
+void {\bfseries Set\+State} (e\+STATE\+\_\+\+TYPE s)
+\item 
+\mbox{\Hypertarget{class_player_ab1524d20c27fea2f3ce01184640e10c0}\label{class_player_ab1524d20c27fea2f3ce01184640e10c0}} 
+e\+PUNCH\+\_\+\+TYPE {\bfseries Get\+Punch\+State} ()
+\item 
+\mbox{\Hypertarget{class_player_a128b757338029e8ded238af917642354}\label{class_player_a128b757338029e8ded238af917642354}} 
+void {\bfseries Set\+Punch\+State} (e\+PUNCH\+\_\+\+TYPE s)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a939076882527323bd86215f324d0bae1}\label{class_player_a939076882527323bd86215f324d0bae1}} 
+class {\bfseries Punch\+State}
+\item 
+\mbox{\Hypertarget{class_player_a160ac1eb6c5c96e61c757af1def06867}\label{class_player_a160ac1eb6c5c96e61c757af1def06867}} 
+class {\bfseries PunchA}
+\item 
+\mbox{\Hypertarget{class_player_a04168e0e9baca3192602b8cf85858d6e}\label{class_player_a04168e0e9baca3192602b8cf85858d6e}} 
+class {\bfseries PunchB}
+\item 
+\mbox{\Hypertarget{class_player_a6da27a3af19f3c92b4362db3765e50de}\label{class_player_a6da27a3af19f3c92b4362db3765e50de}} 
+class {\bfseries PunchC}
+\item 
+\mbox{\Hypertarget{class_player_a9fe2fa758e891a2d78b676125b499ef4}\label{class_player_a9fe2fa758e891a2d78b676125b499ef4}} 
+class {\bfseries Kick\+State}
+\item 
+\mbox{\Hypertarget{class_player_af47625f50036c466946f960db7320bcf}\label{class_player_af47625f50036c466946f960db7320bcf}} 
+class {\bfseries Animation}
+\item 
+\mbox{\Hypertarget{class_player_ae33ab5e976df08e346bdada0a8733984}\label{class_player_ae33ab5e976df08e346bdada0a8733984}} 
+class {\bfseries Anim\+\_\+\+State}
+\item 
+\mbox{\Hypertarget{class_player_a13e69de7866ec69c60766384a8b1a58f}\label{class_player_a13e69de7866ec69c60766384a8b1a58f}} 
+class {\bfseries Anim\+\_\+\+Idle\+State}
+\item 
+\mbox{\Hypertarget{class_player_a5fdb3074103751cef512839d8c030080}\label{class_player_a5fdb3074103751cef512839d8c030080}} 
+class {\bfseries Anim\+\_\+\+Punch\+AState}
+\item 
+\mbox{\Hypertarget{class_player_a71e13013bc962707719c8622d110a64d}\label{class_player_a71e13013bc962707719c8622d110a64d}} 
+class {\bfseries Anim\+\_\+\+Punch\+BState}
+\item 
+\mbox{\Hypertarget{class_player_a635f822edb6368577eaaff700dcb1b21}\label{class_player_a635f822edb6368577eaaff700dcb1b21}} 
+class {\bfseries Anim\+\_\+\+Punch\+CState}
+\item 
+\mbox{\Hypertarget{class_player_ab3c836262d3c3a85b3b7de34591d87f7}\label{class_player_ab3c836262d3c3a85b3b7de34591d87f7}} 
+class {\bfseries Anim\+\_\+\+Kick\+State}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_af73bd2356308d9ad8faa0045ca703570}\label{class_player_af73bd2356308d9ad8faa0045ca703570}} 
+\index{Player@{Player}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Player\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Free the memory. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000180}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_player_a92df89e2d4863438007179e9db394170}\label{class_player_a92df89e2d4863438007179e9db394170}} 
+\index{Player@{Player}!Init@{Init}}
+\index{Init@{Init}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Player\+::\+Init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos,  }\item[{sf\+::\+Vector2f}]{size,  }\item[{sf\+::\+Texture $\ast$}]{tex,  }\item[{float}]{velocity,  }\item[{float}]{jump\+Strength,  }\item[{\mbox{\hyperlink{class_state_machine}{State\+Machine}} $\ast$}]{machine,  }\item[{\mbox{\hyperlink{class_animation}{Animation}} $\ast$}]{anim\+Machine }\end{DoxyParamCaption})}
+
+
+
+Initiates the \mbox{\hyperlink{class_player}{Player}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position on the screen of the player \\
+\hline
+{\em size} & the size of the player in pixels \\
+\hline
+{\em tex} & the texture of the player \\
+\hline
+{\em velocity} & the speed value of the player \\
+\hline
+{\em jump\+Strength} & the jump force. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000177}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_player_a5cb9efd2fc6fbea5d568ae7de19062f1}\label{class_player_a5cb9efd2fc6fbea5d568ae7de19062f1}} 
+\index{Player@{Player}!Render@{Render}}
+\index{Render@{Render}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Player\+::\+Render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Renders the player on a window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window that it\textquotesingle{}ll be rendering to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000179}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_player_a05b60cac1922c5be5c1be16baffa4497}\label{class_player_a05b60cac1922c5be5c1be16baffa4497}} 
+\index{Player@{Player}!Update@{Update}}
+\index{Update@{Update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the logic of the player. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000178}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Player.\+h\item 
+src/Player.\+cpp\end{DoxyCompactItemize}

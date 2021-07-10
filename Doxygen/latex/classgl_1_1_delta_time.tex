@@ -1,0 +1,200 @@
+\hypertarget{classgl_1_1_delta_time}{}\doxysection{gl\+::Delta\+Time Class Reference}
+\label{classgl_1_1_delta_time}\index{gl::DeltaTime@{gl::DeltaTime}}
+
+
+Keeps track of the global time and can create, update and destroy timers accesible in any part of the document.  
+
+
+
+
+{\ttfamily \#include $<$Delta\+Time.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classgl_1_1_delta_time_a88d5838742f6449c6c0eedbed458873a}{Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns the time between the last update and this. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_a856ed2683208f0f9e88ac942cdb4a90e}{Add\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Adds a timer with a name. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{classgl_1_1_delta_time_acc14779eb1852dadd882ed7142df576e}{Get\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns the value of a timer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_ac41aadf4c01edd49a0189f88f38024d1}{Set\+Timer}} (std\+::string name, float time)
+\begin{DoxyCompactList}\small\item\em Sets the value of a timer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_a9e7947e1adf1667403c3c95ccf6f24ca}{Start\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set a timer to start adding time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_a851ac594a869aaa07d964618dac0109f}{Stop\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Stop a timer from addingtime. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_a219bffe18dad6c2bf5673f3e5fd6c964}{Restart\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns a timer\textquotesingle{}s value to 0. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_delta_time_a3f2823d8e3adb0f37fd587aa3a4337b7}{Delete\+Timer}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Deletes a timer. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_delta_time_a2c7398014be9164a8474cadc4bad9e65}{Timer\+Exist}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns true if the timers asked already exist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgl_1_1_delta_time_aa2fab026580d6f14280c2ffb8063a314}\label{classgl_1_1_delta_time_aa2fab026580d6f14280c2ffb8063a314}} 
+class {\bfseries Game}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Keeps track of the global time and can create, update and destroy timers accesible in any part of the document. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a856ed2683208f0f9e88ac942cdb4a90e}\label{classgl_1_1_delta_time_a856ed2683208f0f9e88ac942cdb4a90e}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!AddTimer@{AddTimer}}
+\index{AddTimer@{AddTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{AddTimer()}{AddTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Add\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a timer with a name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000135}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a3f2823d8e3adb0f37fd587aa3a4337b7}\label{classgl_1_1_delta_time_a3f2823d8e3adb0f37fd587aa3a4337b7}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!DeleteTimer@{DeleteTimer}}
+\index{DeleteTimer@{DeleteTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{DeleteTimer()}{DeleteTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Delete\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deletes a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000141}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_acc14779eb1852dadd882ed7142df576e}\label{classgl_1_1_delta_time_acc14779eb1852dadd882ed7142df576e}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!GetTimer@{GetTimer}}
+\index{GetTimer@{GetTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{GetTimer()}{GetTimer()}}
+{\footnotesize\ttfamily float gl\+::\+Delta\+Time\+::\+Get\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the value of a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000136}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a219bffe18dad6c2bf5673f3e5fd6c964}\label{classgl_1_1_delta_time_a219bffe18dad6c2bf5673f3e5fd6c964}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!RestartTimer@{RestartTimer}}
+\index{RestartTimer@{RestartTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{RestartTimer()}{RestartTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Restart\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a timer\textquotesingle{}s value to 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000140}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_ac41aadf4c01edd49a0189f88f38024d1}\label{classgl_1_1_delta_time_ac41aadf4c01edd49a0189f88f38024d1}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!SetTimer@{SetTimer}}
+\index{SetTimer@{SetTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{SetTimer()}{SetTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Set\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the value of a timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+{\em time} & the new time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000137}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a9e7947e1adf1667403c3c95ccf6f24ca}\label{classgl_1_1_delta_time_a9e7947e1adf1667403c3c95ccf6f24ca}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!StartTimer@{StartTimer}}
+\index{StartTimer@{StartTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{StartTimer()}{StartTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Start\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set a timer to start adding time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000138}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a851ac594a869aaa07d964618dac0109f}\label{classgl_1_1_delta_time_a851ac594a869aaa07d964618dac0109f}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!StopTimer@{StopTimer}}
+\index{StopTimer@{StopTimer}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{StopTimer()}{StopTimer()}}
+{\footnotesize\ttfamily void gl\+::\+Delta\+Time\+::\+Stop\+Timer (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop a timer from addingtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000139}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a88d5838742f6449c6c0eedbed458873a}\label{classgl_1_1_delta_time_a88d5838742f6449c6c0eedbed458873a}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!Time@{Time}}
+\index{Time@{Time}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}}
+{\footnotesize\ttfamily static float gl\+::\+Delta\+Time\+::\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the time between the last update and this. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000134}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_delta_time_a2c7398014be9164a8474cadc4bad9e65}\label{classgl_1_1_delta_time_a2c7398014be9164a8474cadc4bad9e65}} 
+\index{gl::DeltaTime@{gl::DeltaTime}!TimerExist@{TimerExist}}
+\index{TimerExist@{TimerExist}!gl::DeltaTime@{gl::DeltaTime}}
+\doxysubsubsection{\texorpdfstring{TimerExist()}{TimerExist()}}
+{\footnotesize\ttfamily bool gl\+::\+Delta\+Time\+::\+Timer\+Exist (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the timers asked already exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000142}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Delta\+Time.\+h\item 
+src/Delta\+Time.\+cpp\end{DoxyCompactItemize}

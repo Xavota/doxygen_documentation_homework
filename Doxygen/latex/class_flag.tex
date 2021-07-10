@@ -1,0 +1,208 @@
+\hypertarget{class_flag}{}\doxysection{Flag Class Reference}
+\label{class_flag}\index{Flag@{Flag}}
+
+
+The flag that will be captured.  
+
+
+
+
+{\ttfamily \#include $<$Flag.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flag_adad7b69e3e9590e32f6b6e89dd7a7d81}{Flag}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Constructor. Calls the Init function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a0647ed260ac673faa102a97fffe2c499}{Init}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Initialize the flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_ae445cbc6e73eddaa3cc9576a54cfa59c}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a191a4c57f2e5e6469f402680e987d00f}{Render}} (sf\+::\+Render\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em Renders the flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_ac164f22ffe359b8a2141a8cbdc87398f}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Frees the memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_agent}{Agent}} $\ast$ \mbox{\hyperlink{class_flag_aa4fdca53094ad1a8aeb3b91bfe9443ae}{Get\+Carrier}} ()
+\begin{DoxyCompactList}\small\item\em Returns the agents that is carrying the flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_aaebf86b791a57700f6a21c0432b54341}{Set\+Carrier}} (\mbox{\hyperlink{class_agent}{Agent}} $\ast$carrier)
+\begin{DoxyCompactList}\small\item\em Changes the agents that is carrying the flag. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_flag_a25aae07e823d72a0c1ab37aa865956a3}{Get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the flag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a4208325b9ca89b0f9ace785784b79ee2}{Set\+Position}} (sf\+::\+Vector2f pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of the flag. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_flag_abf95fb4dca2c974786ae92ad8f4b986e}{Get\+Radious}} ()
+\begin{DoxyCompactList}\small\item\em Returns the min distance for an agent to catch the flag. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_flag_a3ff1f313490a8365cefc0e951af9e92a}{Can\+Be\+Picked\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Asks if the flag can be picked up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The flag that will be captured. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_flag_adad7b69e3e9590e32f6b6e89dd7a7d81}\label{class_flag_adad7b69e3e9590e32f6b6e89dd7a7d81}} 
+\index{Flag@{Flag}!Flag@{Flag}}
+\index{Flag@{Flag}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Flag()}{Flag()}}
+{\footnotesize\ttfamily Flag\+::\+Flag (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Constructor. Calls the Init function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the initial position of the flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000144}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flag_a3ff1f313490a8365cefc0e951af9e92a}\label{class_flag_a3ff1f313490a8365cefc0e951af9e92a}} 
+\index{Flag@{Flag}!CanBePickedUp@{CanBePickedUp}}
+\index{CanBePickedUp@{CanBePickedUp}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{CanBePickedUp()}{CanBePickedUp()}}
+{\footnotesize\ttfamily bool Flag\+::\+Can\+Be\+Picked\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asks if the flag can be picked up. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000154}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_ac164f22ffe359b8a2141a8cbdc87398f}\label{class_flag_ac164f22ffe359b8a2141a8cbdc87398f}} 
+\index{Flag@{Flag}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void Flag\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Frees the memory. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000148}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_aa4fdca53094ad1a8aeb3b91bfe9443ae}\label{class_flag_aa4fdca53094ad1a8aeb3b91bfe9443ae}} 
+\index{Flag@{Flag}!GetCarrier@{GetCarrier}}
+\index{GetCarrier@{GetCarrier}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{GetCarrier()}{GetCarrier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_agent}{Agent}} $\ast$ Flag\+::\+Get\+Carrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the agents that is carrying the flag. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000149}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_a25aae07e823d72a0c1ab37aa865956a3}\label{class_flag_a25aae07e823d72a0c1ab37aa865956a3}} 
+\index{Flag@{Flag}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Flag\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the position of the flag. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000151}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_abf95fb4dca2c974786ae92ad8f4b986e}\label{class_flag_abf95fb4dca2c974786ae92ad8f4b986e}} 
+\index{Flag@{Flag}!GetRadious@{GetRadious}}
+\index{GetRadious@{GetRadious}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{GetRadious()}{GetRadious()}}
+{\footnotesize\ttfamily float Flag\+::\+Get\+Radious (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the min distance for an agent to catch the flag. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000153}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_a0647ed260ac673faa102a97fffe2c499}\label{class_flag_a0647ed260ac673faa102a97fffe2c499}} 
+\index{Flag@{Flag}!Init@{Init}}
+\index{Init@{Init}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Flag\+::\+Init (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Initialize the flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the initial position of the flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000145}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_a191a4c57f2e5e6469f402680e987d00f}\label{class_flag_a191a4c57f2e5e6469f402680e987d00f}} 
+\index{Flag@{Flag}!Render@{Render}}
+\index{Render@{Render}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Flag\+::\+Render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Renders the flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & the window where it\textquotesingle{}ll be rendered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000147}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_aaebf86b791a57700f6a21c0432b54341}\label{class_flag_aaebf86b791a57700f6a21c0432b54341}} 
+\index{Flag@{Flag}!SetCarrier@{SetCarrier}}
+\index{SetCarrier@{SetCarrier}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{SetCarrier()}{SetCarrier()}}
+{\footnotesize\ttfamily void Flag\+::\+Set\+Carrier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{carrier }\end{DoxyParamCaption})}
+
+
+
+Changes the agents that is carrying the flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carrier} & the agent carrying the flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000150}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_a4208325b9ca89b0f9ace785784b79ee2}\label{class_flag_a4208325b9ca89b0f9ace785784b79ee2}} 
+\index{Flag@{Flag}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Flag\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the new position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000152}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_flag_ae445cbc6e73eddaa3cc9576a54cfa59c}\label{class_flag_ae445cbc6e73eddaa3cc9576a54cfa59c}} 
+\index{Flag@{Flag}!Update@{Update}}
+\index{Update@{Update}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Flag\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the flag. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000146}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Flag.\+h\item 
+src/Flag.\+cpp\end{DoxyCompactItemize}

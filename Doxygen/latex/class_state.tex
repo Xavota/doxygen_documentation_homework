@@ -1,0 +1,85 @@
+\hypertarget{class_state}{}\doxysection{State Class Reference}
+\label{class_state}\index{State@{State}}
+Inheritance diagram for State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.242991cm]{class_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_state_a29aa04896c88e5813fccc33d6b843950}{Enter}} ()=0
+\begin{DoxyCompactList}\small\item\em Execute when the state starts. \end{DoxyCompactList}\item 
+virtual e\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_state_a4947f90e30eb7bc4468d63e20d33fc46}{Update}} (\mbox{\hyperlink{class_player}{Player}} $\ast$player)=0
+\begin{DoxyCompactList}\small\item\em Updates the state and handles the state changing. Returns the next state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_state_a870915f8903037114cc8d41b46fa265c}{Exit}} ()=0
+\begin{DoxyCompactList}\small\item\em Execute when the states finishes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_accd0bdbd8896ce0380db3a453fa7440d}\label{class_state_accd0bdbd8896ce0380db3a453fa7440d}} 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ {\bfseries m\+\_\+player}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_a29aa04896c88e5813fccc33d6b843950}\label{class_state_a29aa04896c88e5813fccc33d6b843950}} 
+\index{State@{State}!Enter@{Enter}}
+\index{Enter@{Enter}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily virtual void State\+::\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Execute when the state starts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player that will be controlling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000181}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_punch_state_a046cc85c530635d326db2b2ad8522c18}{Punch\+State}}, \mbox{\hyperlink{class_punch_c_a331219c12ca1c64b86076d4d70a0b972}{PunchC}}, \mbox{\hyperlink{class_punch_b_a7f76dfe70cf96c3d456e830e2bea6ae4}{PunchB}}, \mbox{\hyperlink{class_punch_a_a7b24fcb0a86b34557bcb52b37632ba45}{PunchA}}, \mbox{\hyperlink{class_on_ground_state_a801a83b848ee06cb78a2182d52d4fde1}{On\+Ground\+State}}, \mbox{\hyperlink{class_on_air_state_a448d6909ed4fdacbc00488e43de3cdde}{On\+Air\+State}}, \mbox{\hyperlink{class_kick_state_ad0d74d3013c491b26c9ab8296158db20}{Kick\+State}}, \mbox{\hyperlink{class_idle_state_a06cd96045d1567017833f954dc2fd775}{Idle\+State}}, and \mbox{\hyperlink{class_crouch_state_a0114a970dc326efadff20f3acca6a798}{Crouch\+State}}.
+
+\mbox{\Hypertarget{class_state_a870915f8903037114cc8d41b46fa265c}\label{class_state_a870915f8903037114cc8d41b46fa265c}} 
+\index{State@{State}!Exit@{Exit}}
+\index{Exit@{Exit}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily virtual void State\+::\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Execute when the states finishes. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000183}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_punch_state_aeea8f2af2bc6749e488a487256f64f68}{Punch\+State}}, \mbox{\hyperlink{class_punch_c_a849d86f31ca4aacbeee8962c153266fa}{PunchC}}, \mbox{\hyperlink{class_punch_b_a16c343bf5078e9e1c26b379f3b2d9afe}{PunchB}}, \mbox{\hyperlink{class_punch_a_a6b82a8f810fbde6dd45ea267fb9fa31b}{PunchA}}, \mbox{\hyperlink{class_on_ground_state_a69e61e8f1a4960ea515e1dc1b9924e23}{On\+Ground\+State}}, \mbox{\hyperlink{class_on_air_state_a6ece1afd458f81e874ba4abd92f3278b}{On\+Air\+State}}, \mbox{\hyperlink{class_kick_state_a46bbcba46a78cf07074010038e4565d2}{Kick\+State}}, \mbox{\hyperlink{class_idle_state_aa2fee24b3a1d4ea875d9025af7c6b912}{Idle\+State}}, and \mbox{\hyperlink{class_crouch_state_a5910d0ad2055d2b6e9b712536a2a8cc5}{Crouch\+State}}.
+
+\mbox{\Hypertarget{class_state_a4947f90e30eb7bc4468d63e20d33fc46}\label{class_state_a4947f90e30eb7bc4468d63e20d33fc46}} 
+\index{State@{State}!Update@{Update}}
+\index{Update@{Update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual e\+STATE\+\_\+\+TYPE State\+::\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Updates the state and handles the state changing. Returns the next state. 
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000182}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_punch_state_a5d4055d86fd96298fedfc4fc1df45707}{Punch\+State}}, \mbox{\hyperlink{class_on_ground_state_a2a7bfdb865c38d5d35346535530cce1b}{On\+Ground\+State}}, \mbox{\hyperlink{class_on_air_state_ab57fe57f2d7104dd88bf1df65cced381}{On\+Air\+State}}, \mbox{\hyperlink{class_kick_state_afea0467ff87bed9a68fac534baab5832}{Kick\+State}}, \mbox{\hyperlink{class_idle_state_a3798a365cbb8f2b45d0790bb89c1acf2}{Idle\+State}}, and \mbox{\hyperlink{class_crouch_state_aa5b833844c72ec6a493781aaa7ce61dc}{Crouch\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/State.\+h\item 
+src/State.\+cpp\end{DoxyCompactItemize}

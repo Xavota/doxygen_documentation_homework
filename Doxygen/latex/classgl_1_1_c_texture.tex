@@ -1,0 +1,133 @@
+\hypertarget{classgl_1_1_c_texture}{}\doxysection{gl\+::CTexture Class Reference}
+\label{classgl_1_1_c_texture}\index{gl::CTexture@{gl::CTexture}}
+
+
+Loads and store the textures for later use in any part of the document.  
+
+
+
+
+{\ttfamily \#include $<$CTexture.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classgl_1_1_c_texture_a2d6ead77fdeb167f91ab9fc6eb9c11fa}{Add\+Texture}} (string name, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a texture to the list. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_c_texture_a502597a1e11e15a717cb73ac147f272d}{Add\+Texture}} (string name, sf\+::\+Image image)
+\begin{DoxyCompactList}\small\item\em Adds a texture to the list. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_c_texture_a195d6369f1bfc9f8fa0cc9ad1483bea9}{Add\+Texture}} (string name, string file\+Name, sf\+::\+Color mask\+Color)
+\begin{DoxyCompactList}\small\item\em Adds a texture to the list and make a mask with the given color. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classgl_1_1_c_texture_a8689d11c0e2a64d639f1fa25ef431a70}{Add\+Texture}} (string name, sf\+::\+Image image, sf\+::\+Color mask\+Color)
+\begin{DoxyCompactList}\small\item\em Adds a texture to the list and make a mask with the given color. \end{DoxyCompactList}\item 
+static sf\+::\+Texture $\ast$ \mbox{\hyperlink{classgl_1_1_c_texture_a84059ad131503b33f8df1c3e0dc68a5f}{Get\+Texture}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the texture with that name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Loads and store the textures for later use in any part of the document. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgl_1_1_c_texture_a502597a1e11e15a717cb73ac147f272d}\label{classgl_1_1_c_texture_a502597a1e11e15a717cb73ac147f272d}} 
+\index{gl::CTexture@{gl::CTexture}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!gl::CTexture@{gl::CTexture}}
+\doxysubsubsection{\texorpdfstring{AddTexture()}{AddTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void gl\+::\+CTexture\+::\+Add\+Texture (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{sf\+::\+Image}]{image }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a texture to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the texture that will be stored as \\
+\hline
+{\em image} & the image to convert into a texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000130}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_texture_a8689d11c0e2a64d639f1fa25ef431a70}\label{classgl_1_1_c_texture_a8689d11c0e2a64d639f1fa25ef431a70}} 
+\index{gl::CTexture@{gl::CTexture}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!gl::CTexture@{gl::CTexture}}
+\doxysubsubsection{\texorpdfstring{AddTexture()}{AddTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void gl\+::\+CTexture\+::\+Add\+Texture (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{sf\+::\+Image}]{image,  }\item[{sf\+::\+Color}]{mask\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a texture to the list and make a mask with the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the texture that will be stored as \\
+\hline
+{\em image} & the image to convert into a texture \\
+\hline
+{\em mask\+Color} & the color to wich the mask will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000132}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_texture_a2d6ead77fdeb167f91ab9fc6eb9c11fa}\label{classgl_1_1_c_texture_a2d6ead77fdeb167f91ab9fc6eb9c11fa}} 
+\index{gl::CTexture@{gl::CTexture}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!gl::CTexture@{gl::CTexture}}
+\doxysubsubsection{\texorpdfstring{AddTexture()}{AddTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void gl\+::\+CTexture\+::\+Add\+Texture (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a texture to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the texture that will be stored as \\
+\hline
+{\em file\+Name} & the file where the texture is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000129}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_texture_a195d6369f1bfc9f8fa0cc9ad1483bea9}\label{classgl_1_1_c_texture_a195d6369f1bfc9f8fa0cc9ad1483bea9}} 
+\index{gl::CTexture@{gl::CTexture}!AddTexture@{AddTexture}}
+\index{AddTexture@{AddTexture}!gl::CTexture@{gl::CTexture}}
+\doxysubsubsection{\texorpdfstring{AddTexture()}{AddTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void gl\+::\+CTexture\+::\+Add\+Texture (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{file\+Name,  }\item[{sf\+::\+Color}]{mask\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds a texture to the list and make a mask with the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the texture that will be stored as \\
+\hline
+{\em file\+Name} & the file where the texture is \\
+\hline
+{\em mask\+Color} & the color to wich the mask will be applied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000131}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_c_texture_a84059ad131503b33f8df1c3e0dc68a5f}\label{classgl_1_1_c_texture_a84059ad131503b33f8df1c3e0dc68a5f}} 
+\index{gl::CTexture@{gl::CTexture}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!gl::CTexture@{gl::CTexture}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily sf\+::\+Texture $\ast$ gl\+::\+CTexture\+::\+Get\+Texture (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a pointer to the texture with that name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to identify the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000133}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/CTexture.\+h\item 
+src/CTexture.\+cpp\end{DoxyCompactItemize}

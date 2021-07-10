@@ -1,0 +1,130 @@
+\hypertarget{class_agent___anim_has_flag_state}{}\doxysection{Agent\+\_\+\+Anim\+Has\+Flag\+State Class Reference}
+\label{class_agent___anim_has_flag_state}\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+
+
+\mbox{\hyperlink{class_animation}{Animation}} state. Excecutes when the agent is carrying the flag.  
+
+
+
+
+{\ttfamily \#include $<$Agent\+\_\+\+Anim\+Has\+Flag\+State.\+h$>$}
+
+Inheritance diagram for Agent\+\_\+\+Anim\+Has\+Flag\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_agent___anim_has_flag_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_agent___anim_has_flag_state_a613fa235b322727ce7de50b5a687d593}{Agent\+\_\+\+Anim\+Has\+Flag\+State}} (std\+::vector$<$ sf\+::\+Int\+Rect $>$ sequence, sf\+::\+Texture $\ast$atlas\+Map, float fps, bool repeat)
+\begin{DoxyCompactList}\small\item\em Creates the state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent___anim_has_flag_state_a8a688df98c4f453fd74d651d63174a1b}{Enter}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The start of the state. \end{DoxyCompactList}\item 
+e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent___anim_has_flag_state_a5c5d7020b38050145c6fd9890e8d9699}{Update}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The update of the state. Returns the new state to the machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent___anim_has_flag_state_acf94aa2dce14bc686a545193e7690ed2}{Exit}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The end of the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_animation}{Animation}} state. Excecutes when the agent is carrying the flag. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_agent___anim_has_flag_state_a613fa235b322727ce7de50b5a687d593}\label{class_agent___anim_has_flag_state_a613fa235b322727ce7de50b5a687d593}} 
+\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}!Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}!Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+\doxysubsubsection{\texorpdfstring{Agent\_AnimHasFlagState()}{Agent\_AnimHasFlagState()}}
+{\footnotesize\ttfamily Agent\+\_\+\+Anim\+Has\+Flag\+State\+::\+Agent\+\_\+\+Anim\+Has\+Flag\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ sf\+::\+Int\+Rect $>$}]{sequence,  }\item[{sf\+::\+Texture $\ast$}]{atlas\+Map,  }\item[{float}]{fps,  }\item[{bool}]{repeat }\end{DoxyParamCaption})}
+
+
+
+Creates the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & the order and texture rects of the animation, taken of the texture given \\
+\hline
+{\em atlas\+Map} & the texture with all the images of the animation \\
+\hline
+{\em fps} & the speed of the animation (frames per second) \\
+\hline
+{\em repeat} & if the animation should end or repeat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000057}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent___anim_has_flag_state_a8a688df98c4f453fd74d651d63174a1b}\label{class_agent___anim_has_flag_state_a8a688df98c4f453fd74d651d63174a1b}} 
+\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}!Enter@{Enter}}
+\index{Enter@{Enter}!Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+Has\+Flag\+State\+::\+Enter (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The start of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000058}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_a66a23a28469ca7563a32449cc5620538}{Agent\+\_\+\+Anim\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_has_flag_state_acf94aa2dce14bc686a545193e7690ed2}\label{class_agent___anim_has_flag_state_acf94aa2dce14bc686a545193e7690ed2}} 
+\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}!Exit@{Exit}}
+\index{Exit@{Exit}!Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+Has\+Flag\+State\+::\+Exit (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The end of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000060}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_ade0f3e7203af9fd30a3fac149a19b1e4}{Agent\+\_\+\+Anim\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_has_flag_state_a5c5d7020b38050145c6fd9890e8d9699}\label{class_agent___anim_has_flag_state_a5c5d7020b38050145c6fd9890e8d9699}} 
+\index{Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}!Update@{Update}}
+\index{Update@{Update}!Agent\_AnimHasFlagState@{Agent\_AnimHasFlagState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE Agent\+\_\+\+Anim\+Has\+Flag\+State\+::\+Update (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The update of the state. Returns the new state to the machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000059}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_a8f747df9287cb71a2ee753be8be54809}{Agent\+\_\+\+Anim\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent\+\_\+\+Anim\+Has\+Flag\+State.\+h\item 
+src/Agent\+\_\+\+Anim\+Has\+Flag\+State.\+cpp\end{DoxyCompactItemize}

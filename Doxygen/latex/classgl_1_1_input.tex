@@ -1,0 +1,146 @@
+\hypertarget{classgl_1_1_input}{}\doxysection{gl\+::Input Class Reference}
+\label{classgl_1_1_input}\index{gl::Input@{gl::Input}}
+
+
+Keeps track of all the inputs and store its values to be accesed in every part of the document.  
+
+
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_afe911a7cffa33354e8a77f897edb6aee}{Get\+Key\+Pressed}} (sf\+::\+Keyboard\+::\+Key key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if the key was pressed in this update. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_ac46ce11c6a95b1f4299ed9a3c32b06d1}{Get\+Key}} (sf\+::\+Keyboard\+::\+Key key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if the key is being pressed in this update. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_a887b9dc5faaed5e05c06bd59645e3777}{Get\+Key\+Released}} (sf\+::\+Keyboard\+::\+Key key\+Code)
+\begin{DoxyCompactList}\small\item\em Returns true if the key was pressed on the last update and not in this. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_a021b3b3fd1b9fc4fdb8f9b820f5729cd}{Get\+Mouse\+Button\+Down}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns true if the mouse button was pressed in this update (0 = left, 1 = right, 3 = middle) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_a05c10ded4d2c8b9934b8f9c2997f9228}{Get\+Mouse\+Button}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns true if the mouse button is being pressed in this update (0 = left, 1 = right, 3 = middle) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classgl_1_1_input_a68d6903356a3bfb088abf9d12fe6cdde}{Get\+Mouse\+Button\+Up}} (int button)
+\begin{DoxyCompactList}\small\item\em Returns true if the mouse button was pressed on the last update and not in this (0 = left, 1 = right, 3 = middle) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgl_1_1_input_aa2fab026580d6f14280c2ffb8063a314}\label{classgl_1_1_input_aa2fab026580d6f14280c2ffb8063a314}} 
+class {\bfseries Game}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Keeps track of all the inputs and store its values to be accesed in every part of the document. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgl_1_1_input_ac46ce11c6a95b1f4299ed9a3c32b06d1}\label{classgl_1_1_input_ac46ce11c6a95b1f4299ed9a3c32b06d1}} 
+\index{gl::Input@{gl::Input}!GetKey@{GetKey}}
+\index{GetKey@{GetKey}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetKey()}{GetKey()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Key (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the key is being pressed in this update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000170}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_input_afe911a7cffa33354e8a77f897edb6aee}\label{classgl_1_1_input_afe911a7cffa33354e8a77f897edb6aee}} 
+\index{gl::Input@{gl::Input}!GetKeyPressed@{GetKeyPressed}}
+\index{GetKeyPressed@{GetKeyPressed}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetKeyPressed()}{GetKeyPressed()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Key\+Pressed (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the key was pressed in this update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000169}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_input_a887b9dc5faaed5e05c06bd59645e3777}\label{classgl_1_1_input_a887b9dc5faaed5e05c06bd59645e3777}} 
+\index{gl::Input@{gl::Input}!GetKeyReleased@{GetKeyReleased}}
+\index{GetKeyReleased@{GetKeyReleased}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetKeyReleased()}{GetKeyReleased()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Key\+Released (\begin{DoxyParamCaption}\item[{sf\+::\+Keyboard\+::\+Key}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the key was pressed on the last update and not in this. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000171}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_input_a05c10ded4d2c8b9934b8f9c2997f9228}\label{classgl_1_1_input_a05c10ded4d2c8b9934b8f9c2997f9228}} 
+\index{gl::Input@{gl::Input}!GetMouseButton@{GetMouseButton}}
+\index{GetMouseButton@{GetMouseButton}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButton()}{GetMouseButton()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Mouse\+Button (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the mouse button is being pressed in this update (0 = left, 1 = right, 3 = middle) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000173}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_input_a021b3b3fd1b9fc4fdb8f9b820f5729cd}\label{classgl_1_1_input_a021b3b3fd1b9fc4fdb8f9b820f5729cd}} 
+\index{gl::Input@{gl::Input}!GetMouseButtonDown@{GetMouseButtonDown}}
+\index{GetMouseButtonDown@{GetMouseButtonDown}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButtonDown()}{GetMouseButtonDown()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Mouse\+Button\+Down (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the mouse button was pressed in this update (0 = left, 1 = right, 3 = middle) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000172}{Bug}}]No know Bugs \end{DoxyRefDesc}
+\mbox{\Hypertarget{classgl_1_1_input_a68d6903356a3bfb088abf9d12fe6cdde}\label{classgl_1_1_input_a68d6903356a3bfb088abf9d12fe6cdde}} 
+\index{gl::Input@{gl::Input}!GetMouseButtonUp@{GetMouseButtonUp}}
+\index{GetMouseButtonUp@{GetMouseButtonUp}!gl::Input@{gl::Input}}
+\doxysubsubsection{\texorpdfstring{GetMouseButtonUp()}{GetMouseButtonUp()}}
+{\footnotesize\ttfamily bool gl\+::\+Input\+::\+Get\+Mouse\+Button\+Up (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns true if the mouse button was pressed on the last update and not in this (0 = left, 1 = right, 3 = middle) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & the key checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000174}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Input.\+h\item 
+src/Input.\+cpp\end{DoxyCompactItemize}

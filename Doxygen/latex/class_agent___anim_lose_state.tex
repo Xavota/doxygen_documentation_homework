@@ -1,0 +1,130 @@
+\hypertarget{class_agent___anim_lose_state}{}\doxysection{Agent\+\_\+\+Anim\+Lose\+State Class Reference}
+\label{class_agent___anim_lose_state}\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+
+
+\mbox{\hyperlink{class_animation}{Animation}} state. Excecutes when the agent lose the game.  
+
+
+
+
+{\ttfamily \#include $<$Agent\+\_\+\+Anim\+Lose\+State.\+h$>$}
+
+Inheritance diagram for Agent\+\_\+\+Anim\+Lose\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_agent___anim_lose_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_agent___anim_lose_state_a98dbcee38de5bbff59eb76c669a7c9b8}{Agent\+\_\+\+Anim\+Lose\+State}} (std\+::vector$<$ sf\+::\+Int\+Rect $>$ sequence, sf\+::\+Texture $\ast$atlas\+Map, float fps, bool repeat)
+\begin{DoxyCompactList}\small\item\em Creates the state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent___anim_lose_state_a2fd0b7bfebbcee2dba45129a0befb002}{Enter}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The start of the state. \end{DoxyCompactList}\item 
+e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE \mbox{\hyperlink{class_agent___anim_lose_state_a8b0df5646e394ea2cb2c4c9a472126e6}{Update}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The update of the state. Returns the new state to the machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_agent___anim_lose_state_a28bde63e8ae80865549fe6308b996570}{Exit}} (class \mbox{\hyperlink{class_agent}{Agent}} $\ast$agent)
+\begin{DoxyCompactList}\small\item\em The end of the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_animation}{Animation}} state. Excecutes when the agent lose the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_agent___anim_lose_state_a98dbcee38de5bbff59eb76c669a7c9b8}\label{class_agent___anim_lose_state_a98dbcee38de5bbff59eb76c669a7c9b8}} 
+\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}!Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}!Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+\doxysubsubsection{\texorpdfstring{Agent\_AnimLoseState()}{Agent\_AnimLoseState()}}
+{\footnotesize\ttfamily Agent\+\_\+\+Anim\+Lose\+State\+::\+Agent\+\_\+\+Anim\+Lose\+State (\begin{DoxyParamCaption}\item[{std\+::vector$<$ sf\+::\+Int\+Rect $>$}]{sequence,  }\item[{sf\+::\+Texture $\ast$}]{atlas\+Map,  }\item[{float}]{fps,  }\item[{bool}]{repeat }\end{DoxyParamCaption})}
+
+
+
+Creates the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sequence} & the order and texture rects of the animation, taken of the texture given \\
+\hline
+{\em atlas\+Map} & the texture with all the images of the animation \\
+\hline
+{\em fps} & the speed of the animation (frames per second) \\
+\hline
+{\em repeat} & if the animation should end or repeat \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000061}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent___anim_lose_state_a2fd0b7bfebbcee2dba45129a0befb002}\label{class_agent___anim_lose_state_a2fd0b7bfebbcee2dba45129a0befb002}} 
+\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}!Enter@{Enter}}
+\index{Enter@{Enter}!Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+\doxysubsubsection{\texorpdfstring{Enter()}{Enter()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+Lose\+State\+::\+Enter (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The start of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000062}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_a66a23a28469ca7563a32449cc5620538}{Agent\+\_\+\+Anim\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_lose_state_a28bde63e8ae80865549fe6308b996570}\label{class_agent___anim_lose_state_a28bde63e8ae80865549fe6308b996570}} 
+\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}!Exit@{Exit}}
+\index{Exit@{Exit}!Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+\doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
+{\footnotesize\ttfamily void Agent\+\_\+\+Anim\+Lose\+State\+::\+Exit (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The end of the state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000064}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_ade0f3e7203af9fd30a3fac149a19b1e4}{Agent\+\_\+\+Anim\+State}}.
+
+\mbox{\Hypertarget{class_agent___anim_lose_state_a8b0df5646e394ea2cb2c4c9a472126e6}\label{class_agent___anim_lose_state_a8b0df5646e394ea2cb2c4c9a472126e6}} 
+\index{Agent\_AnimLoseState@{Agent\_AnimLoseState}!Update@{Update}}
+\index{Update@{Update}!Agent\_AnimLoseState@{Agent\_AnimLoseState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily e\+AGENT\+\_\+\+ANIM\+\_\+\+STATE\+\_\+\+TYPE Agent\+\_\+\+Anim\+Lose\+State\+::\+Update (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{class_agent}{Agent}} $\ast$}]{agent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The update of the state. Returns the new state to the machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & the agent to modify its textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000063}{Bug}}]No know Bugs \end{DoxyRefDesc}
+
+
+Reimplemented from \mbox{\hyperlink{class_agent___anim_state_a8f747df9287cb71a2ee753be8be54809}{Agent\+\_\+\+Anim\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Agent\+\_\+\+Anim\+Lose\+State.\+h\item 
+src/Agent\+\_\+\+Anim\+Lose\+State.\+cpp\end{DoxyCompactItemize}
