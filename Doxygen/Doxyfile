@@ -58,7 +58,7 @@ PROJECT_LOGO           = C:/Users/marad/OneDrive/Escritorio/Extras/Clases/SextoC
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = C:\Users\marad\OneDrive\Escritorio\Extras\Clases\SextoCuatri\Software\Doxygen
+OUTPUT_DIRECTORY       = C:\Users\marad\OneDrive\Documents\GitHub\doxygen_documentation_homework\Doxygen
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
